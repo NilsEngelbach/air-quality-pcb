@@ -1,0 +1,13 @@
+# KiCad backup / lock / autosave files
+*.bak
+*.kicad_prl
+*.kicad_pcb.lck
+*.kicad_pro.lck
+~*.lck
+*.kicad_pcb.zip
+.history/
+*-backups/
+_autosave-*
+fp-info-cache
+# Fabrication output (regenerated on demand)
+gerbers/
