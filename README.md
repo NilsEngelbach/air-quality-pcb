@@ -1,10 +1,12 @@
 # Air Quality Checker — PCB
 
-> **Three board revisions are in this repo.** This README documents **v1**
+> **Four board revisions are in this repo.** This README documents **v1**
 > (108 × 108 mm square). A denser **round** revision lives in [`v2/`](v2/) —
 > Ø 72 mm, with mounting holes and a wind logo, same circuit. [`v3/`](v3/) is
 > the round board with the **BME688 soldered directly on-board** (no STEMMA QT
-> breakout).
+> breakout). [`v4/`](v4/) adds a GPIO2 status LED, battery sensing, USB ESD,
+> battery reverse-polarity protection, a spare-GPIO header, fiducials and a 5 V
+> servo boost.
 
 Custom 2-layer KiCad board for the [air-quality-checker](../air-quality-checker) firmware:
 an ESP8266 air-quality monitor that reads a Bosch BME688 over I2C and moves an
