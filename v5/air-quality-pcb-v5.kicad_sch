@@ -10277,7 +10277,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 355.6 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -10288,6 +10288,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 355.6 67.31 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 355.6 67.31 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "0294b704-ee58-4d78-b17a-28d3be3d10e7")
 		)
@@ -10356,7 +10362,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 116.84 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -10367,6 +10373,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 116.84 208.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 116.84 208.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "8e959caa-a972-47c3-aa37-d2853779bfd1")
 		)
@@ -10514,7 +10526,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 318.77 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -10525,6 +10537,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 318.77 157.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 318.77 157.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2aab6375-15c3-4997-a973-95888cd08bc7")
 		)
@@ -10593,7 +10611,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 16V X5R 0805"
 			(at 281.94 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -10604,6 +10622,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21A475KOFNNNG" (at 281.94 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 281.94 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "cf92d5af-6ce4-4b33-a5ba-e5405a79e390")
 		)
@@ -10748,7 +10772,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN HEADER VERT 4POS 2.54MM THT"
 			(at 143.51 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10759,6 +10783,12 @@
 				)
 			)
 		)
+    (property "MPN" "61300411121" (at 143.51 77.47 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Wurth Elektronik" (at 143.51 77.47 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b881e2b6-3449-421e-8402-840e96f79448")
 		)
@@ -10833,7 +10863,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 110.49 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10844,6 +10874,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 110.49 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 110.49 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9e84b55d-0a7a-419f-9a99-f85564b7def3")
 		)
@@ -10912,7 +10948,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 22.1K OHM 1% 1/8W 0805"
 			(at 299.72 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10923,6 +10959,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0722K1L" (at 299.72 40.64 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 299.72 40.64 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9f967972-e928-4d1d-ac52-c6e2e8dbbf01")
 		)
@@ -10991,7 +11033,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10UF 16V X5R 0805"
 			(at 27.94 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11002,6 +11044,12 @@
 				)
 			)
 		)
+    (property "MPN" "CC0805KRX5R7BB106" (at 27.94 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 27.94 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "917e3fd0-72f0-4e68-889b-596e5424cd92")
 		)
@@ -11070,7 +11118,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 130.81 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11081,6 +11129,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 130.81 40.64 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 130.81 40.64 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1baf8ab4-356e-43ff-8f37-ec284205b1e1")
 		)
@@ -11149,7 +11203,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TRANS NPN 40V 0.6A SOT-23"
 			(at 367.03 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11160,6 +11214,12 @@
 				)
 			)
 		)
+    (property "MPN" "MMBT2222ALT1G" (at 367.03 54.61 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "onsemi" (at 367.03 54.61 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "68bb684d-74dd-4fe1-a2bc-e8c8cb949bc6")
 		)
@@ -11231,7 +11291,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP ALUM 100UF 20% 16V SMD 6.3mm dia"
 			(at 365.76 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11242,6 +11302,12 @@
 				)
 			)
 		)
+    (property "MPN" "UCD1C101MCL1GS" (at 365.76 143.51 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Nichicon" (at 365.76 143.51 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "82694aa1-c3c4-4c47-8804-6cd63ede875e")
 		)
@@ -11310,7 +11376,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TVS DIODE 5.25VWM 17VC SOT-23-6"
 			(at 217.17 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11321,6 +11387,12 @@
 				)
 			)
 		)
+    (property "MPN" "USBLC6-2SC6" (at 217.17 60.96 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "STMicroelectronics" (at 217.17 60.96 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f0c5b880-4c52-4211-8a07-1ff89472c5f0")
 		)
@@ -11401,7 +11473,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 114.3 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11412,6 +11484,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 114.3 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 114.3 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4bf5ee95-b235-425e-a885-8f886a486887")
 		)
@@ -11480,7 +11558,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 1K OHM 1% 1/8W 0805"
 			(at 106.68 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -11491,6 +11569,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-071KL" (at 106.68 118.11 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 106.68 118.11 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "725ddde9-b810-40f6-a90b-11dcd48d30b5")
 		)
@@ -11635,7 +11719,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 2.2K OHM 1% 1/8W 0805"
 			(at 64.77 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11646,6 +11730,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-072K2L" (at 64.77 140.97 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 64.77 140.97 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "72fc79c0-7a9b-4289-8cf0-6325af81d7d6")
 		)
@@ -11714,7 +11804,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 82K OHM 1% 1/8W 0805"
 			(at 215.9 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -11725,6 +11815,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0782KL" (at 215.9 209.55 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 215.9 209.55 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a18f6128-5d85-4e40-b659-b628095608ea")
 		)
@@ -11793,7 +11889,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 32V SMD"
 			(at 99.06 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -11804,6 +11900,12 @@
 				)
 			)
 		)
+    (property "MPN" "KMR221G LFS" (at 99.06 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "C&K" (at 99.06 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "aa9fec22-5809-45a9-a8d3-6ed64c397fc3")
 		)
@@ -11872,7 +11974,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 47.5K OHM 1% 1/8W 0805"
 			(at 299.72 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11883,6 +11985,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0747K5L" (at 299.72 74.93 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 299.72 74.93 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2def1534-7130-4973-8ba8-09504209c1de")
 		)
@@ -11951,7 +12059,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10UF 16V X5R 0805"
 			(at 303.53 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -11962,6 +12070,12 @@
 				)
 			)
 		)
+    (property "MPN" "CC0805KRX5R7BB106" (at 303.53 157.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 303.53 157.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e8f3884d-c56c-4364-923b-5f424a07c838")
 		)
@@ -12030,7 +12144,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED BLUE CLEAR 0805 SMD"
 			(at 139.7 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12041,6 +12155,12 @@
 				)
 			)
 		)
+    (property "MPN" "LTST-C170TBKT" (at 139.7 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Lite-On Inc." (at 139.7 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f411a787-553e-434f-b0ad-3619bc29f58c")
 		)
@@ -12185,7 +12305,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SENSOR GAS/HUM/PRES/TEMP I2C LGA-8"
 			(at 72.39 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -12196,6 +12316,12 @@
 				)
 			)
 		)
+    (property "MPN" "BME688" (at 72.39 217.17 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Bosch Sensortec" (at 72.39 217.17 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "555c2f63-487c-4d06-9fbf-7f965f1fcc6c")
 		)
@@ -12282,7 +12408,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 5.1K OHM 1% 1/8W 0805"
 			(at 208.28 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12293,6 +12419,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-075K1L" (at 208.28 34.29 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 208.28 34.29 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "da6a2bfd-1377-4cdf-9e94-5fe2619a9204")
 		)
@@ -12361,7 +12493,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 367.03 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -12372,6 +12504,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 367.03 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 367.03 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1f2823b0-4ff4-4e93-aa03-d0a40fa8555e")
 		)
@@ -12440,7 +12578,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC BOOST CONVERTER ADJ 1.2A SOT-23-6"
 			(at 180.34 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -12451,6 +12589,12 @@
 				)
 			)
 		)
+    (property "MPN" "MT3608" (at 180.34 207.01 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Aerosemi Tech" (at 180.34 207.01 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5d8ed852-10e3-42af-9aed-88fdf885c644")
 		)
@@ -12531,7 +12675,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DIODE SCHOTTKY 40V 1A SOD-123"
 			(at 250.19 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12542,6 +12686,12 @@
 				)
 			)
 		)
+    (property "MPN" "B5819W-TP" (at 250.19 147.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "MCC (Micro Commercial Components)" (at 250.19 147.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "3c069798-9fd5-4345-9455-fd75f8d3e718")
 		)
@@ -12610,7 +12760,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB Type-C 2.0 receptacle 16P mid-mount SMD"
 			(at 171.45 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -12621,6 +12771,12 @@
 				)
 			)
 		)
+    (property "MPN" "TYPE-C-31-M-12" (at 171.45 46.99 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Korean Hroparts (HRO)" (at 171.45 46.99 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "A1"
 			(uuid "31efc5f1-7fc3-410b-bd5c-6ca1adf7cb06")
 		)
@@ -12734,7 +12890,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN HEADER VERT 3POS 2.54MM THT"
 			(at 393.7 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -12745,6 +12901,12 @@
 				)
 			)
 		)
+    (property "MPN" "61300311121" (at 393.7 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Wurth Elektronik" (at 393.7 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c70e46ee-bff4-4ff9-892a-74539a60b348")
 		)
@@ -12816,7 +12978,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -12827,6 +12989,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 58.42 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 58.42 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5e1ee1f9-d4f4-4fbd-9f7b-88a7ddb2e689")
 		)
@@ -12895,7 +13063,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 5.1K OHM 1% 1/8W 0805"
 			(at 208.28 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -12906,6 +13074,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-075K1L" (at 208.28 41.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 208.28 41.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1f54feac-d199-4060-87ff-7e4f58a9bc11")
 		)
@@ -12974,7 +13148,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 252.73 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -12985,6 +13159,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 252.73 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 252.73 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "812da99e-37bf-4cf2-8e6f-0ac625b53120")
 		)
@@ -13053,7 +13233,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 48.26 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -13064,6 +13244,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 48.26 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 48.26 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5ee4f889-f1ad-47cf-ab6f-53cad60d7b5e")
 		)
@@ -13132,7 +13318,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 100K OHM 1% 1/8W 0805"
 			(at 236.22 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13143,6 +13329,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-07100KL" (at 236.22 160.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 236.22 160.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "eeb2a0e3-3fdf-4d58-b5df-c4fadfd812ca")
 		)
@@ -13211,7 +13403,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC REG LINEAR 3.3V 600MA SOT-23-5"
 			(at 273.05 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -13222,6 +13414,12 @@
 				)
 			)
 		)
+    (property "MPN" "AP2112K-3.3TRG1" (at 273.05 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Diodes Incorporated" (at 273.05 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9fbd19c5-0f19-40ee-a810-9f64f40f8a0c")
 		)
@@ -13299,7 +13497,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 100K OHM 1% 1/8W 0805"
 			(at 215.9 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -13310,6 +13508,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-07100KL" (at 215.9 142.24 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 215.9 142.24 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4aa9beeb-ba23-47a5-812c-9c3d2eea921a")
 		)
@@ -13378,7 +13582,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 100.33 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -13389,6 +13593,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 100.33 208.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 100.33 208.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2e2b52d8-ff83-400a-9273-ed168e19da18")
 		)
@@ -13457,7 +13667,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10UF 16V X5R 0805"
 			(at 170.18 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -13468,6 +13678,12 @@
 				)
 			)
 		)
+    (property "MPN" "CC0805KRX5R7BB106" (at 170.18 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 170.18 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f864418b-0468-40ab-960a-fefe2a9b1b77")
 		)
@@ -13536,7 +13752,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 27K OHM 1% 1/8W 0805"
 			(at 215.9 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -13547,6 +13763,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0727KL" (at 215.9 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 215.9 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7f80c841-89b5-4ea3-8a8f-12971baee26c")
 		)
@@ -13615,7 +13837,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 100 OHM 1% 1/8W 0805"
 			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13626,6 +13848,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-07100RL" (at 372.11 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 372.11 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "34e68707-664b-4bab-be6c-f90ab969343b")
 		)
@@ -13694,7 +13922,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MOSFET P-CH 20V 4.2A SOT-23"
 			(at 236.22 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -13705,6 +13933,12 @@
 				)
 			)
 		)
+    (property "MPN" "DMG2305UX-7" (at 236.22 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Diodes Incorporated" (at 236.22 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "221d9479-7cb5-466e-8d37-65e99fd5ae86")
 		)
@@ -13776,7 +14010,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 32V SMD"
 			(at 63.5 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -13787,6 +14021,12 @@
 				)
 			)
 		)
+    (property "MPN" "KMR221G LFS" (at 63.5 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "C&K" (at 63.5 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "fb9cc173-02d5-471b-bf96-0cf3623cc540")
 		)
@@ -13855,7 +14095,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 16V X5R 0805"
 			(at 265.43 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -13866,6 +14106,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21A475KOFNNNG" (at 265.43 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 265.43 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1ded75b2-c649-4ab1-8cf2-1dbcc904c580")
 		)
@@ -13934,7 +14180,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "FIXED IND 10UH 1.5A 130 MOHM SMD 4x4x3"
 			(at 180.34 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -13945,6 +14191,12 @@
 				)
 			)
 		)
+    (property "MPN" "SWPA4030S100MT" (at 180.34 195.58 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Sunlord" (at 180.34 195.58 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2004b7a9-0185-4e13-8090-942941730dea")
 		)
@@ -14013,7 +14265,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MOSFET P-CH 20V 4.2A SOT-23"
 			(at 130.81 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -14024,6 +14276,12 @@
 				)
 			)
 		)
+    (property "MPN" "DMG2305UX-7" (at 130.81 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Diodes Incorporated" (at 130.81 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "561077c6-4358-46d7-89a2-0ca07c2c217c")
 		)
@@ -14171,7 +14429,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DIODE SCHOTTKY 40V 3A DO-214AC (SMA)"
 			(at 215.9 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -14182,6 +14440,12 @@
 				)
 			)
 		)
+    (property "MPN" "SS34-HF" (at 215.9 204.47 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Comchip Technology" (at 215.9 204.47 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "09c52f0c-e72d-4153-9907-355aadfb4ccd")
 		)
@@ -14250,7 +14514,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 54.61 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -14261,6 +14525,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 54.61 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 54.61 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2609501d-cec7-4487-9d4c-a975dfd1952f")
 		)
@@ -14329,7 +14599,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 22UF 16V X5R 0805"
 			(at 232.41 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -14340,6 +14610,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21A226KOQNNNG" (at 232.41 214.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 232.41 214.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "deb39f6c-b1a9-40a0-948a-2fabafb337be")
 		)
@@ -14408,7 +14684,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN HEADER VERT 2POS 2MM JST PH THT"
 			(at 110.49 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -14419,6 +14695,12 @@
 				)
 			)
 		)
+    (property "MPN" "B2B-PH-K-S" (at 110.49 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "JST" (at 110.49 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "44813222-f907-4c28-8f9b-aaa3b6f2af9e")
 		)
@@ -14487,7 +14769,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 11K OHM 1% 1/8W 0805"
 			(at 208.28 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -14498,6 +14780,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0711KL" (at 208.28 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 208.28 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "baf9e387-1c61-4b6a-9dc8-87be8157129d")
 		)
@@ -14566,7 +14854,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 1UF 16V X7R 0805"
 			(at 259.08 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -14577,6 +14865,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B105KOFNNWE" (at 259.08 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 259.08 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5e956925-ef95-41e9-823d-c92f36cbe3c7")
 		)
@@ -14645,7 +14939,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED GREEN CLEAR 0805 SMD"
 			(at 109.22 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -14656,6 +14950,12 @@
 				)
 			)
 		)
+    (property "MPN" "LTST-C170GKT" (at 109.22 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Lite-On Inc." (at 109.22 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "0c2a1ed4-80d8-464e-b581-fc4aeec4b7fd")
 		)
@@ -14724,7 +15024,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC BATT CNTL LI-ION 1CEL SOT-23-5"
 			(at 86.36 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14735,6 +15035,12 @@
 				)
 			)
 		)
+    (property "MPN" "MCP73831T-2ACI/OT" (at 86.36 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Microchip Technology" (at 86.36 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "08bf6591-c18c-4b91-96c4-b7d503b5af56")
 		)
@@ -14812,7 +15118,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ESP8266 WiFi module ESP-12F"
 			(at 78.74 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14823,6 +15129,12 @@
 				)
 			)
 		)
+    (property "MPN" "ESP-12F" (at 78.74 60.96 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Ai-Thinker" (at 78.74 60.96 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "90ae52d9-b036-4a60-8f86-855eefee1590")
 		)
@@ -14951,7 +15263,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SWITCH SLIDE SPDT 0.3A 6V SMD right-angle"
 			(at 154.94 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14962,6 +15274,12 @@
 				)
 			)
 		)
+    (property "MPN" "PCM12SMTBR" (at 154.94 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "C&K" (at 154.94 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7b8e97cd-2646-4881-a46a-75f892283a77")
 		)
@@ -15033,7 +15351,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 50.8 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15044,6 +15362,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 50.8 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 50.8 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "00f86020-9688-44ec-80d9-d204a00751c1")
 		)
@@ -15112,7 +15436,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10UF 16V X5R 0805"
 			(at 25.4 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15123,6 +15447,12 @@
 				)
 			)
 		)
+    (property "MPN" "CC0805KRX5R7BB106" (at 25.4 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 25.4 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f8216d39-c8b8-45ce-9103-babfd1707911")
 		)
@@ -15267,7 +15597,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 41.91 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -15278,6 +15608,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 41.91 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 41.91 215.9 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "313b6bc2-a02b-4d1a-81c5-3e58442fdb31")
 		)
@@ -15346,7 +15682,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TRANS NPN 40V 0.6A SOT-23"
 			(at 367.03 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -15357,6 +15693,12 @@
 				)
 			)
 		)
+    (property "MPN" "MMBT2222ALT1G" (at 367.03 81.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "onsemi" (at 367.03 81.28 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "34ac54be-31b4-4def-b86d-dbad5e63cb77")
 		)
@@ -15428,7 +15770,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 1K OHM 1% 1/8W 0805"
 			(at 148.59 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -15439,6 +15781,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-071KL" (at 148.59 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 148.59 39.37 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b37ceca6-8b7e-4560-9c90-32bb008d799d")
 		)
@@ -15507,7 +15855,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 16V X5R 0805"
 			(at 121.92 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -15518,6 +15866,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21A475KOFNNNG" (at 121.92 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 121.92 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "216a902b-9b4c-41eb-b554-d474b692ebb9")
 		)
@@ -15586,7 +15940,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 16V X5R 0805"
 			(at 31.75 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -15597,6 +15951,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21A475KOFNNNG" (at 31.75 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 31.75 135.89 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "667d91aa-dcda-4298-9a49-4674d7dd61c9")
 		)
@@ -15665,7 +16025,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC USB TO UART BRIDGE QFN-28"
 			(at 327.66 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -15676,6 +16036,12 @@
 				)
 			)
 		)
+    (property "MPN" "CP2102N-A02-GQFN28" (at 327.66 72.39 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Silicon Labs" (at 327.66 72.39 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7190bf10-897e-4cfd-a9b1-cb1241917bb4")
 		)
@@ -15825,7 +16191,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 39.37 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15836,6 +16202,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 39.37 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 39.37 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a4b1bf4e-7f40-4ac9-baf8-fac298db40f2")
 		)
@@ -15904,7 +16276,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
 			(at 204.47 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -15915,6 +16287,12 @@
 				)
 			)
 		)
+    (property "MPN" "CL21B104KBCNNNC" (at 204.47 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 204.47 158.75 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b345e1c8-4726-4266-b9a7-ccce6d0947b8")
 		)
@@ -15983,7 +16361,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 10K OHM 1% 1/8W 0805"
 			(at 50.8 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15994,6 +16372,12 @@
 				)
 			)
 		)
+    (property "MPN" "RC0805FR-0710KL" (at 50.8 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "YAGEO" (at 50.8 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f2098e3e-4de6-40e8-b91d-a0b86ec5c5d5")
 		)

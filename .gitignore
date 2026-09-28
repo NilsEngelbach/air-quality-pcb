@@ -11,3 +11,5 @@ _autosave-*
 fp-info-cache
 # Fabrication output (regenerated on demand)
 gerbers/
+
+*.env
