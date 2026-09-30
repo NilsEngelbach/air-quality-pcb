@@ -117,9 +117,16 @@ GPIO16→RST via JP1, VBAT_SENSE on ADC).
 - **Gerbers**: layout is done (SW4 near SW3 at the board edge, D3 at the edge
   facing out; routed + refilled per repo `AGENTS.md`, DRC clean) — fabrication
   outputs not yet generated.
-- **Firmware**: mode decode at boot, sparse-mode LittleFS buffering
-  (`rtcData.bootCount % 12`), setup-mode captive portal, LED *long–short–short*
-  pattern, BOOST_EN handling around `birdyServo.setIaq()`.
+- **Firmware**: ✅ implemented in the `air-quality-checker` repo — SW4 mode
+  decode at boot (`BirdyMode`), sparse-mode LittleFS buffering
+  (`rtcData.bootCount % 12`, `BirdyStore`), setup-mode captive portal
+  (`BirdySetup`, `Birdy-Setup-<chipid>`, ~3 min timeout), LED
+  *long–short–short* pattern (`BirdyLED::setSetupPattern`), BOOST_EN gating
+  around `birdyServo.setIaq()` (GPIO15, `BirdyServo`), and battery-voltage
+  reading (`BirdyBattery`, VBAT_SENSE divider → ADC, uploaded as nullable
+  `battery` column — apply dashboard migration `009_battery_voltage.sql`
+  before flashing). Credentials are provisioned via the portal, never
+  compiled in (`BirdyConfig`). Builds clean for `huzzah` + `huzzah_debug`.
 
 ## Files
 
@@ -129,6 +136,7 @@ GPIO16→RST via JP1, VBAT_SENSE on ADC).
 | `air-quality-pcb-v6.kicad_pcb` | v6 layout: synced, SW4 + D3 placed, routed, zones refilled |
 | `drc_v6_check.rpt` | DRC report: 0 violations |
 | `power_budget.md` | v6 power analysis per WiFi mode |
+| `user-documentation.md` | End-user guide: controls, LEDs, WiFi modes, setup, troubleshooting |
 | `schematic_v6.pdf` | Plotted schematic |
 | `bom_kicad_raw.csv` / `bom_pcbway_v6.csv` | BOM (raw / PCBWay assembly format) |
 | `erc_v6.rpt` | ERC report: 0 violations |
