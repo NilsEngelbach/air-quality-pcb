@@ -6088,12 +6088,12 @@
 		)
 		(uuid "812f0f1c-66db-42f4-ac32-936bdba443e4")
 	)
-	(text "WiFi Mode Switch (SW4): POS.1 = OFF (GPIO12 low) — POS.2 = SPARSE, upload 1x/h (both inputs high) — POS.3 = CONTINUOUS (GPIO14 low). Read at boot with internal pull-ups (no external pull-ups: +3V3 stays live in deep sleep)."
+	(text "WiFi Mode Switch (SW4)\nPOS.1 = OFF (GPIO12 low)\nPOS.2 = SPARSE, upload 1x/h (both inputs high)\nPOS.3 = CONTINUOUS (GPIO14 low).\nRead at boot with internal pull-ups\n(no external pull-ups: +3V3 stays live in deep sleep)."
 		(exclude_from_sim no)
-		(at 60 276 0)
+		(at 118.11 72.644 0)
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 0.508 0.508)
 			)
 			(justify left bottom)
 		)
