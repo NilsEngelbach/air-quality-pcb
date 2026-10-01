@@ -1,6 +1,11 @@
 # Air Quality Checker — PCB
 
-> **Six board revisions are in this repo.** This README documents **v1**
+> **Seven board revisions are in this repo.** The latest, [`v7/`](v7/), moves to the
+> **ESP32-C3** (native USB, no CP2102N), adds a servo-rail load switch, a FET-driven
+> power switch and long-actuator edge switches — schematic done, layout open; see
+> [`v7/README.md`](v7/README.md) and the findings in [`v7/design_review.md`](v7/design_review.md).
+>
+> **Older revisions:** This README documents **v1**
 > (108 × 108 mm square). A denser **round** revision lives in [`v2/`](v2/) —
 > Ø 72 mm, with mounting holes and a wind logo, same circuit. [`v3/`](v3/) is
 > the round board with the **BME688 soldered directly on-board** (no STEMMA QT

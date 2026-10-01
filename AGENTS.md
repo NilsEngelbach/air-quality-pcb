@@ -97,3 +97,27 @@ every placed component (verified against Digi-Key). To regenerate the assembly B
   `save_board {force:true}` and confirm with `query_zones` (`isFilled`).
 - **`delete_trace` needs `net:"*"`** to clear everything; the MCP has no
   `delete_zone`, which is why zone work goes through `pcb_prep.py`.
+- **MCP schematic edits can delete required junctions.** `batch_connect`,
+  `batch_add_and_connect`, `move_schematic_component` and `add_schematic_component`
+  run a junction sync that removes junctions where a wire end meets the middle of
+  another wire (T-joints). In KiCad those junctions are electrical, so nets silently
+  split. After any MCP schematic edit, run `kicad-cli sch erc` and diff the
+  junctions against the previous file. `batch_connect` may also draw diagonal wires to
+  a "nearby facing label" — check the view.
+- **`sync_schematic_to_board` only adds footprints and sets pad nets.** It does not
+  remove deleted parts or swap changed footprints, and its own netlist parser names
+  nets without KiCad's `/` prefix and misses T-joint connections. Delete the
+  removed or changed footprints with pcbnew first, run the sync to add the new ones, then
+  re-apply nets, values and paths from `kicad-cli sch export netlist --format kicadxml`.
+  Confirm with `kicad-cli pcb drc --schematic-parity`.
+- **Large MCP batches can truncate the schematic.** The MCP kills its Python worker
+  after 30 s. If `batch_add_and_connect` (or `batch_connect`) is still writing at that moment, the
+  `.kicad_sch` is left at **0 bytes**. Keep batches to 2–3 components and copy the file before each call.
+- **Text with line breaks:** `add_schematic_text` stores `\n` as a literal
+  backslash-n; fix it in the file (`\\n` → `\n`).
+- **Project footprints** live in `<version>/AirQuality.pretty` (registered in the
+  version's `fp-lib-table`). For v7, update `densifyRefs` in step 6 to the module/regulators
+  that exist (`U1`, `U4`, `U7`).
+- **BOM without the MCP:** `kicad-cli sch export bom --fields
+  "Reference,Value,Footprint,Manufacturer,MPN,Description" --group-by ""` produces
+  the same `bom_kicad_raw.csv` that `build_pcbway_bom.py` expects.

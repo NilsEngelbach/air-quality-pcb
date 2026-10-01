@@ -1,0 +1,272 @@
+(footprint "SW_Slide_SP3T_Angled_CK_OS103011MA7Q"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "C&K miniature slide switch, OS series, SP3T ON-ON-ON, right angle, 4 mm actuator (OS103011MA7QP1). Geometry from C&K OS datasheet p. I-42; pin-row-to-body-front offset copied from KiCad SW_Slide_SPDT_Angled_CK_OS102011MA1Q (same series) - verify on first article")
+	(tags "switch SP3T slide right angle OS103011MA7QP1")
+	(property "Reference" "REF**"
+		(at 4 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "c62867f7-b2ad-4c05-bc09-9923d028a1a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "SW_Slide_SP3T_Angled_CK_OS103011MA7Q"
+		(at 4 8 0)
+		(layer "F.Fab")
+		(uuid "b806f1b7-10fb-4d6d-99ab-bc5b387ae1ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89211d7e-c118-4f11-bd4c-21a8b6253051")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67393cac-0c8e-411c-8d4b-865c343e26cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.349999 -2.3)
+		(end 10.35 -2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "258b9fc1-b845-442f-b173-eb772d0177e1")
+	)
+	(fp_line
+		(start -0.899999 2.3)
+		(end 2.9 2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "91279e19-192e-4a7f-83f2-6bec03f5f542")
+	)
+	(fp_line
+		(start 5.1 2.3)
+		(end 8.9 2.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "30f8a0de-98f1-4e3b-bb09-1b9e54fa2755")
+	)
+	(fp_line
+		(start -3.3 2.25)
+		(end 11.3 2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "fb46e196-ed72-47f2-a58b-e9b758df6a5a")
+	)
+	(fp_line
+		(start -3.73 -2.75)
+		(end 11.73 -2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "df8e6107-3b01-4ea7-962b-21fb3c85eae1")
+	)
+	(fp_line
+		(start -3.73 6.75)
+		(end -3.73 -2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "bbdc2f65-02a1-428f-b2e3-cef3fee5ba58")
+	)
+	(fp_line
+		(start 11.73 -2.75)
+		(end 11.73 6.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "1e301ec5-963c-4a41-9b3c-75980938b548")
+	)
+	(fp_line
+		(start 11.73 6.75)
+		(end -3.73 6.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c0e3c8d2-394b-4f4e-b920-80b1085ed3c1")
+	)
+	(fp_line
+		(start -2.3 -2.25)
+		(end 10.3 -2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "1ab52e67-7377-458b-a072-04afef4378da")
+	)
+	(fp_line
+		(start -2.3 2.25)
+		(end -2.3 -2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "ebafbac2-e876-4cae-b9b1-ba970a0932ed")
+	)
+	(fp_line
+		(start 3 2.25)
+		(end 5 2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a57d8c42-4a9d-429e-8790-fcb1528ba84e")
+	)
+	(fp_line
+		(start 3 6.25)
+		(end 3 2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "c74b8068-f95b-4ccd-bfac-5a1b89fd0e1e")
+	)
+	(fp_line
+		(start 5 2.25)
+		(end 5 6.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "17ce2760-713b-4546-8ba1-5b4ca776b4fd")
+	)
+	(fp_line
+		(start 5 6.25)
+		(end 3 6.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f4dad32f-b036-40e9-90d9-6d8add3e4432")
+	)
+	(fp_line
+		(start 10.3 -2.25)
+		(end 10.3 2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "73feb79b-e47b-4892-8c6d-0b57b1235b7d")
+	)
+	(fp_line
+		(start 10.3 2.25)
+		(end -2.3 2.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "0e939bdd-f015-4e89-be8a-093766535701")
+	)
+	(pad "" thru_hole oval
+		(at -2.1 0)
+		(size 2.2 3.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "48a8564c-8cff-4a59-8a7b-a13c5a25b2ce")
+	)
+	(pad "" thru_hole oval
+		(at 10.1 0)
+		(size 2.2 3.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "558b901a-0241-4ae7-9581-40027105e2ac")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "10746e7a-afca-4273-ac78-ca541eb9172a")
+	)
+	(pad "2" thru_hole oval
+		(at 4 0)
+		(size 1.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "25c44a7a-fd65-404f-9c52-4558af3cb1ab")
+	)
+	(pad "3" thru_hole oval
+		(at 6 0)
+		(size 1.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5d8cc2b6-7be5-4962-9d10-71bdfaa1820c")
+	)
+	(pad "4" thru_hole oval
+		(at 8 0)
+		(size 1.5 2.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "91f8684d-9c5c-4024-808a-d01e3a87bcf3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/air-quality-pcb-v7.3dshapes/SW_Slide_SP3T_Angled_CK_OS103011MA7Q.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
