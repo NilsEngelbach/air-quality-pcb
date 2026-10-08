@@ -1,0 +1,39 @@
+** Drc report for air-quality-pcb-v8.kicad_pcb **
+** Created on 2026-10-05T13:56:01 **
+** Report includes: Errors, Warnings **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 7 Footprint errors **
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(35.9080 mm, 35.9080 mm): Footprint H3
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(32.0000 mm, 31.5000 mm): Footprint FID3
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(78.5000 mm, 32.0000 mm): Footprint FID1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(35.9080 mm, 74.0920 mm): Footprint H2
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(40.0000 mm, 70.5000 mm): Footprint FID2
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(74.0920 mm, 35.9080 mm): Footprint H4
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(74.0900 mm, 74.0900 mm): Footprint H1
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

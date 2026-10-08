@@ -44,9 +44,10 @@ PKG = {
     "Button_Switch_SMD:SW_SP3T_PCM13": "PCM13",
     "LED_SMD:LED_Kingbright_KPA-3010_3x2x1mm": "3.0x2.0x1.0mm side-view",
     "Power_Protection:USBLC6-2SC6": "SOT-23-6",
-    "AirQuality:ESP32-C3-WROOM-02_EPADvia0.3": "ESP32-C3-WROOM-02 module 18x20mm",
+    "RF_Module:ESP32-C3-WROOM-02": "ESP32-C3-WROOM-02 module 18x20mm",
+    "Espressif:ESP32-C3-WROOM-02": "ESP32-C3-WROOM-02 module 18x20mm",
     "Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q": "C&K OS right-angle SPDT (THT)",
-    "AirQuality:SW_Slide_SP3T_Angled_CK_OS103011MA7Q": "C&K OS right-angle SP3T (THT)",
+    "SamacSys_Parts:OS103011MA7QP1": "C&K OS right-angle SP3T (THT)",
     "Diode_SMD:Nexperia_CFP3_SOD-123W": "SOD-123W (CFP3)",
     "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal": "JST SH 1.0mm 4P right-angle SMD",
 }
@@ -55,7 +56,7 @@ THT_FP = (
     "Connector_PinHeader_2.54mm:",
     "Connector_JST:",
     "Button_Switch_THT:",
-    "AirQuality:SW_Slide_",
+    "SamacSys_Parts:OS103011MA7QP1",
 )
 
 NOTES = {
@@ -66,9 +67,9 @@ NOTES = {
     "TYPE-C-31-M-12": "e.g. LCSC C165948",
     "MT3608": "e.g. LCSC C84717",
     "CP2102N-A02-GQFN28": "Tape-and-reel: CP2102N-A02-GQFN28R",
-    "ESP32-C3-WROOM-02-N4": "ESP32-C3 module, 4 MB flash; EPAD thermal vias 0.3 mm",
+    "ESP32-C3-WROOM-02-N4": "ESP32-C3 module, 4 MB flash",
     "OS102011MA1QN1": "Right-angle THT, 4 mm actuator; e.g. LCSC C226259",
-    "OS103011MA7QP1": "Right-angle THT SP3T, 4 mm actuator; Digi-Key CKN9561-ND; custom footprint - verify",
+    "OS103011MA7QP1": "Right-angle THT SP3T, 4 mm actuator; Digi-Key CKN9561-ND",
     "PMEG4030ER,115": "Replaces SS34 (SMA) for a smaller boost loop",
     "SM04B-SRSS-TB(LF)(SN)": "STEMMA QT / Qwiic port",
     "KPA-3010SGC": "Green side-view charge LED",

@@ -30,7 +30,7 @@ Start with [`layout_plan.md`](layout_plan.md); the rules behind it are in
 | 9 | R4 10 k → **100 k** (BOOST_EN pull-down); VBUS_SENSE divider swapped to 47.5 k / 22.1 k → ESP ADC IO1 | (F10, F17) |
 | 10 | **Net classes** Power 0.8 mm / Supply 0.5 mm / USB 0.25 mm | v6 was 0.2 mm everywhere (F5) |
 | 11 | Solid zone connection on the GND pads of U1/U3/U4/U7 | v6 starved thermals (F4) |
-| 12 | Project footprint library `AirQuality.pretty`: OS103011MA7Q switch, WROOM-02 with 0.3 mm EPAD vias | no stock footprint / 0.2 mm drills (F11, F15) |
+| 12 | Stock `RF_Module:ESP32-C3-WROOM-02`, board minimum drill lowered to **0.2 mm**; SW4 uses the vendor (SamacSys) footprint `SamacSys_Parts:OS103011MA7QP1` | 0.2 mm EPAD via drills (F15) / no stock SP3T angled footprint (F11) |
 | 13 | **Charger R14 2.2 k → 3.3 k** (≈ 455 → 303 mA) | thermal regulation and board heating near the sensor (F12) |
 | 14 | **D2 CHG LED → Kingbright KPA-3010SGC** (green, side-view), on the board edge like D3 | the top-view 0805 was invisible inside the enclosure (F23) |
 | 15 | **STEMMA QT port J5** (JST SH 4P): switched 3V3 (Q8, IO2), bus isolation (Q9/Q10 BSS138 + R29/R30), ESD (U8 USBLC6), C23 | optional add-on sensors, e.g. a real CO₂ sensor (SCD41), with zero sleep current (F21) |
@@ -103,7 +103,7 @@ Measure before updating the battery tables.
 | File | Purpose |
 |---|---|
 | `air-quality-pcb-v7.kicad_pro/.kicad_sch/.kicad_pcb` | v7 project (ERC clean; board synced with the cuts, placement in progress) |
-| `AirQuality.pretty/`, `fp-lib-table` | project footprints (OS103011MA7Q switch, WROOM-02 EPAD 0.3 mm) |
+| `SamacSys_Parts.pretty/`, `fp-lib-table` | vendor footprint for SW4 (OS103011MA7QP1, from the Mouser / SamacSys Library Loader) |
 | `design_review.md` | findings F1–F24 with evidence, sources and validation checklists |
 | `layout_plan.md` | step-by-step placement and routing plan with coordinates |
 | `layout_constraints.md` | the rules behind it: antenna, boost loop, edge overhang, widths |

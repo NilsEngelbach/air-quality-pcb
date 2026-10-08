@@ -1,4 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "AirQuality")(type "KiCad")(uri "${KIPRJMOD}/AirQuality.pretty")(options "")(descr "Project footprints for the air-quality PCB"))
+	(lib (name "SamacSys_Parts") (type "KiCad") (uri "${KIPRJMOD}/SamacSys_Parts.pretty") (options "") (descr "Vendor footprints from Mouser / SamacSys Library Loader") (disabled))
 )

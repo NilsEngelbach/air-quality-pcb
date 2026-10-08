@@ -1,9 +1,11 @@
 # Air Quality Checker — PCB
 
-> **Seven board revisions are in this repo.** The latest, [`v7/`](v7/), moves to the
-> **ESP32-C3** (native USB, no CP2102N), adds a servo-rail load switch, a FET-driven
-> power switch and long-actuator edge switches — schematic done, layout open; see
-> [`v7/README.md`](v7/README.md) and the findings in [`v7/design_review.md`](v7/design_review.md).
+> **Eight board revisions are in this repo.** The latest, [`v8/`](v8/), is the routed v7
+> board **without the 5 V servo boost** (the servo runs from VSYS through its load switch) and
+> with Espressif's WROOM-02 footprint, so the board keeps the **0.3 mm minimum drill** — see
+> [`v8/README.md`](v8/README.md) and [`v8/design_review.md`](v8/design_review.md) (F25–F26).
+> [`v7/`](v7/) moved to the **ESP32-C3** (native USB, no CP2102N) and added a servo-rail load switch,
+> a FET-driven power switch and long-actuator edge switches — see [`v7/README.md`](v7/README.md).
 >
 > **Older revisions:** This README documents **v1**
 > (108 × 108 mm square). A denser **round** revision lives in [`v2/`](v2/) —

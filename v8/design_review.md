@@ -1,20 +1,22 @@
-# v7 Design Review — Findings and Validation Checklist
+# v8 Design Review — Findings and Validation Checklist
 
-Review of the v6 board (`v6/air-quality-pcb-v6.*`, state of 2026-09-30) and the
-changes made for v7. Every finding lists the evidence, the source, what v7 does
-about it, and how to validate it. Tick the boxes as you validate.
+F1–F24 are the review of the v6 board (`v6/air-quality-pcb-v6.*`, state of 2026-09-30) and the
+changes made for v7; they carry over to v8, which is built from the routed v7 board. **F25–F26** cover
+the v8 changes: the 5 V boost is removed, and the ESP32-C3 footprint fits the 0.3 mm minimum drill.
+Where v8 changes an earlier finding, the section has a **v8** note. Every finding lists the evidence,
+the source, what the design does about it, and how to validate it. Tick the boxes as you validate.
 
-**Status legend:** ✅ done in the v7 schematic/netlist · 🟡 layout task, still open (placement and routing) ·
-⬜ open decision, not changed · 🔬 needs bench or firmware validation
+**Status legend:** ✅ done in the schematic/netlist · 🟡 layout task, still open ·
+⬜ open decision, not changed · 🔬 needs bench or firmware validation · ➖ obsolete in v8
 
 | # | Finding | Status |
 |---|---|---|
 | F1 | Power switch SW3 (0.3 A) carries the whole battery current | ✅ 🔬 |
-| F2 | Servo rail is **not** off in deep sleep on v6 (boost passes VSYS through L1/D4) | ✅ 🔬 |
+| F2 | Servo rail is **not** off in deep sleep on v6 (boost passes VSYS through L1/D4) | ✅ 🔬 (v8: Q6 now feeds the servo directly) |
 | F3 | v6 "DRC clean" is stale — the current v6 file has 8 violations | ✅ 🟡 |
-| F4 | GND pads of U3 (charger) and U7 (boost) have only one thermal spoke | ✅ |
+| F4 | GND pads of U3 (charger) and U7 (boost) have only one thermal spoke | ✅ (U7 gone in v8) |
 | F5 | All tracks are 0.2 mm, no net classes | ✅ 🟡 |
-| F6 | Boost converter hot loop is ~20 mm long, with no input cap at U7 | ✅ 🟡 |
+| F6 | Boost converter hot loop is ~20 mm long, with no input cap at U7 | ➖ boost removed |
 | F7 | ESP-12F antenna sits mid-board with copper all around | ✅ 🟡 |
 | F8 | USB-UART bridge (CP2102N) is not needed with the ESP32-C3 | ✅ 🔬 |
 | F9 | ESP32-C3 strapping / EN / USB requirements | ✅ 🔬 |
@@ -23,7 +25,7 @@ about it, and how to validate it. Tick the boxes as you validate.
 | F12 | MCP73831 runs in thermal regulation at 455 mA | ✅ (R14 3.3 k) 🟡 🔬 |
 | F13 | BME688 needs thermal isolation from heat sources | 🟡 |
 | F14 | AP2112K quiescent current dominates the v7 sleep floor | ✅ decided: keep |
-| F15 | WROOM-02 library footprint uses 0.2 mm EPAD via drills | ✅ min drill 0.2 mm |
+| F15 | WROOM-02 library footprint uses 0.2 mm EPAD via drills | ✅ v8: Espressif footprint (F26) |
 | F16 | BSEC2 supports the ESP32-C3 | ✅ 🔬 |
 | F17 | VBUS_SENSE moved from CP2102N to ESP ADC | ✅ 🔬 |
 | F18 | Round outline vs. straight-fronted edge parts | ✅ (cuts done) 🔬 |
@@ -33,6 +35,8 @@ about it, and how to validate it. Tick the boxes as you validate.
 | F22 | Charge status to the MCU | ✅ 🔬 |
 | F23 | CHG LED D2 invisible inside the enclosure | ✅ 🟡 |
 | F24 | BME688 occupies the common add-on address 0x77 | ✅ 🔬 |
+| F25 | **v8:** boost removed — servo runs from VSYS (4.5 V USB / 3.0–4.2 V battery) | ✅ 🟡 🔬 |
+| F26 | **v8:** board must keep the 0.3 mm minimum drill — EPAD vias for the WROOM-02 | ✅ 🟡 🔬 |
 
 ---
 
@@ -68,13 +72,16 @@ about it, and how to validate it. Tick the boxes as you validate.
   ≈ 47 µA / 100 nF ≈ 0.5 V/ms, so BOOST_IN ramps in ~8 ms and the inrush into the
   ~166 µF downstream (C18 + C19 + C21 + C13) is ~80 mA instead of amps.
   Off state: R4 keeps BOOST_EN low → Q7 off → Q6 off → zero rail current.
+- **v8:** the boost is gone and Q6's drain is the servo rail itself (`SERVO_PWR`; the control net is
+  now `SERVO_EN`, gate/pull-down nets `SERVO_GATE`/`SERVO_PD`). Downstream capacitance is C19 + C13 = 122 µF,
+  so the soft-start inrush is ≈ 60 mA. The off state is unchanged: zero rail current. See F25.
 - **Validate:**
   - [ ] **On a v6 board first:** measure the J3 pin-2 current and voltage in deep sleep (expect ≈ VSYS − 0.3 V and
         ≥ 37 µA plus the servo idle current). This confirms the finding and quantifies the v6 loss.
-  - [ ] v7 deep sleep: SERVO_5V = 0 V, BOOST_IN = 0 V.
-  - [ ] Scope VSYS, +3V3 and BOOST_IN on a BOOST_EN rising edge: BOOST_IN ramps in ~5–10 ms;
+  - [ ] v8 deep sleep: SERVO_PWR = 0 V.
+  - [ ] Scope VSYS, +3V3 and SERVO_PWR on a SERVO_EN rising edge: SERVO_PWR ramps in ~5–10 ms;
         +3V3 dips < 100 mV (no ESP brownout).
-  - [ ] Servo moves normally with BOOST_EN high ≥ 100 ms before the move.
+  - [ ] Servo moves normally with SERVO_EN high ≥ 50 ms before the move.
 
 ## F3 — v6 DRC report is stale
 
@@ -82,8 +89,9 @@ about it, and how to validate it. Tick the boxes as you validate.
   A fresh `kicad-cli pcb drc` on v6 gives **8 violations**: 4× copper-to-edge
   (SW3 0.47 / 0.47 mm, SW4 0.44 / 0.42 mm vs the 0.5 mm rule), 2× silkscreen clipped (SW3),
   2× starved thermal (F4).
-- **v7 action:** SW3/SW4 replaced (F11); thermal fix (F4). v7 DRC currently shows only
-  the expected unrouted state (`drc_v7_unrouted.rpt`).
+- **v7 action:** SW3/SW4 replaced (F11); thermal fix (F4).
+- **v8:** `drc_v8.rpt` (with schematic parity): 0 errors, 0 unconnected; 2 warnings (U1 silkscreen
+  clipped at the antenna notch, F26) and the 7 board-only footprints.
 - **Validate:**
   - [ ] After placement and routing: `run_drc` = 0 violations, and the report timestamp is newer than the board file.
 
@@ -93,6 +101,8 @@ about it, and how to validate it. Tick the boxes as you validate.
   These are the two parts whose GND pin is their main heat path.
 - **v7 action:** pad zone connection set to **solid** for the GND pads of U1 (pin 9 + EPAD),
   U3, U4 and U7.
+- **v8:** U7 is removed. The solid connection is set again on U1 pin 9 and on all nine EPAD pads of the new
+  footprint (F26).
 - **Validate:**
   - [ ] After the zone refill, no `starved_thermal` on these pads. (The 5 current hits on J1/U6 are fine-pitch USB
         GND pads that lost their feeding traces; they clear when routed.)
@@ -104,20 +114,22 @@ about it, and how to validate it. Tick the boxes as you validate.
   0.2 mm × 35 µm Cu ≈ 2.5 mΩ/mm → 0.25 V per 10 cm at 1 A. Heating is not the issue
   (IPC-2221 ≈ 0.7 A for +10 °C); voltage drop and inductance are (brownout during
   servo + WiFi peaks at low battery).
-- **v7 action:** net classes in `air-quality-pcb-v7.kicad_pro` (Freerouting/`export_dsn` reads them):
+- **Action (v7, updated for v8):** net classes in `air-quality-pcb-v8.kicad_pro` (Freerouting/`export_dsn` reads them):
 
   | Class | Width | Via | Nets |
   |---|---|---|---|
-  | Power | 0.8 mm | 0.8/0.4 | BAT_IN, VBAT_RAW, VBAT, VSYS, BOOST_SW, SERVO_5V |
+  | Power | 0.8 mm | 0.8/0.4 | BAT_IN, VBAT_RAW, VBAT, VSYS, SERVO_PWR |
   | Supply | 0.5 mm | 0.8/0.4 | VBUS, +3V3, GND |
   | USB | 0.25 mm (diff pair 0.25/0.2) | 0.6/0.3 | USB_D±, USB_D*_CON, USB_D*_MCU |
 
-  BOOST_IN is not in a class yet: route it ≥ 0.8 mm, or add it to Power.
+  v8: SERVO_PWR (was BOOST_IN + SERVO_5V) is in Power; BOOST_SW is gone.
 - **Validate:**
   - [ ] `export_dsn` contains the classes; routed power tracks are ≥ the class widths.
   - [ ] At a 1 A battery load: VBAT_RAW → VSYS drop < 100 mV (incl. Q4, Q5, Q3).
 
-## F6 — Boost converter hot loop
+## F6 — Boost converter hot loop (obsolete in v8)
+
+> **v8:** the boost converter is removed (F25), so this finding and its checks no longer apply. Kept for the record.
 
 - **Evidence (v6 placement):** U7–L1 14.5 mm, U7–D4 13.6 mm, D4–C19 20.5 mm, D4–C13 25.4 mm;
   BOOST_SW was a 20 mm track at 0.2 mm. **No cap at U7 IN**: the nearest VSYS cap was C18,
@@ -143,6 +155,9 @@ about it, and how to validate it. Tick the boxes as you validate.
 - **v7 action:** module → ESP32-C3-WROOM-02 (18 × 20 mm). Its footprint carries an all-layer
   keepout of 28 × 11 mm (5 mm beyond each side and the antenna end). The old mid-board
   keepout zone was removed. Placement in `layout_constraints.md` §2.
+- **v8:** Espressif's footprint only carries an 18 × 6 mm keepout (the antenna area of the module itself).
+  The 28 × 11 mm area of the stock footprint is kept as the board rule area **ANTENNA_KEEPOUT**
+  (x 41–69, y 15.4–26.4, F.Cu + B.Cu: no tracks, vias, pads or pour) — see F26.
 - **Validate:**
   - [ ] Layout: antenna end at (or past) the board edge; no copper, tracks or vias in the keepout.
   - [ ] Bench: RSSI of v6 vs v7 at the same spot / AP distance (expect v7 ≥ v6).
@@ -190,7 +205,7 @@ about it, and how to validate it. Tick the boxes as you validate.
 | IO6 / IO7 | SDA / SCL | R18/R19 10 k pull-ups; BME688 0x76 + QT port |
 | IO8 | STATUS_LED_N | strap, pull-up R5, LED active-low |
 | IO9 | BOOT | strap, R3 + SW2 |
-| IO10 | BOOST_EN | R4 100 k pull-down → Q7/Q6 and U7 EN |
+| IO10 | SERVO_EN (v7: BOOST_EN) | R4 100 k pull-down → Q7/Q6 servo-rail switch |
 | IO18 / IO19 | USB D− / D+ | via R25 / R24 |
 | IO20 | CHG_DET | charger status via R31/R32 (F22) |
 | IO21 | — | unconnected, spare |
@@ -243,8 +258,8 @@ about it, and how to validate it. Tick the boxes as you validate.
 ## F13 — BME688 thermal isolation
 
 - **Evidence:** heat sources on board: U3 (up to ~1 W), U4 (≈ 0.45 W during TX bursts on USB:
-  (4.6 − 3.3) V × 0.35 A), U7/L1 during moves, ESP module, LEDs.
-- **v7 action (layout):** U5 on the opposite side of the board from U1/U3/U4/U7, ideally on a
+  (4.6 − 3.3) V × 0.35 A), ESP module, LEDs (v7 also had U7/L1 during moves; removed in v8).
+- **v7 action (layout):** U5 on the opposite side of the board from U1/U3/U4, ideally on a
   peninsula with a milled slot on 2–3 sides; keep the existing SENSOR_KEEPOUT (no pour under U5).
 - **Validate:**
   - [ ] Compare BME688 temperature vs a reference thermometer in sleep cycle, while charging, and on CONTINUOUS WiFi.
@@ -267,8 +282,8 @@ about it, and how to validate it. Tick the boxes as you validate.
 - **v7 action:** keep the stock `RF_Module:ESP32-C3-WROOM-02` footprint (0.2 mm drills, 0.6 mm pads,
   0.2 mm annular ring) and lower the board minimum (`min_through_hole_diameter`) to **0.2 mm**.
   PCBWay builds 0.2 mm drills, possibly at extra cost. (An earlier v7 draft used a project copy with 0.3 mm drills.)
-- **Validate:**
-  - [ ] PCBWay DFM accepts the 0.2 mm drills (check the quote surcharge); X-ray / inspection shows no solder voids from wicking (tented or plugged vias are an option).
+- **v8 (decided):** the board stays at the **0.3 mm** minimum drill. The 0.2 mm EPAD drills are gone with
+  Espressif's own footprint — details and checks in **F26**.
 
 ## F16 — BSEC2 on the ESP32-C3
 
@@ -309,7 +324,8 @@ about it, and how to validate it. Tick the boxes as you validate.
   R22/R23 plus the SG92R idle current with power and no PWM (not in its datasheet — measure;
   micro servos often draw several mA, which would dominate the daily budget).
 - v7 estimate: ~66 µA (F14), servo rail 0.
-- [ ] Measure the v6 and v7 sleep currents with the same firmware mode and record them in `v7/power_budget.md` (to be written after bench).
+- v8: unchanged (~66 µA); removing the boost only drops parts that were already switched off by Q6.
+- [ ] Measure the v6 and v8 sleep currents with the same firmware mode and record them in `v8/power_budget.md` (to be written after bench).
 
 ## F21 — STEMMA QT port
 
@@ -352,13 +368,70 @@ about it, and how to validate it. Tick the boxes as you validate.
 - **Validate:**
   - [ ] Firmware uses `BME68X_I2C_ADDR_LOW` (0x76); I²C scan shows the BME688 at 0x76.
 
+## F25 — Servo supply without the boost (v8)
+
+- **Decision:** remove the MT3608 boost (U7, L1, D4, C18, C21, R22, R23). The servo must work on USB **and** on
+  battery, so it runs from **VSYS** through the existing load switch Q6 (F2). VBUS alone was rejected:
+  it is 0 V on battery.
+- **Evidence:**
+  - SG92R (TowerPro): rated **4.8–6 V**; all figures are given at 4.8 V (2.5 kg·cm, 0.1 s/60°). TowerPro
+    publishes no current figures; micro servos of this class typically draw ~5–10 mA idle,
+    ~150–250 mA moving and ~0.6 A or more at start/stall (estimate — measure).
+  - SERVO_PWR = VSYS − Q6 drop (DMG2305UX, ≈ 50–70 mΩ → ≈ 15 mV at 250 mA):
+    **USB ≈ 4.5–4.6 V** (VBUS − B5819W at ~0.5 A; within a few % of the rating), **battery 3.0–4.2 V**
+    (below the rating: lower torque and speed, roughly proportional to voltage).
+  - On battery, a start/stall pulse of ~0.6 A through the cell's protection, Q4/Q5/Q3 and the cell's internal
+    resistance pulls VSYS down by roughly 0.2–0.3 V. The AP2112K needs VIN ≳ 3.3 V + dropout (≈ 0.1–0.25 V at the
+    ESP's load) to hold +3V3; the module runs down to 3.0 V. Below VBAT ≈ 3.5 V a servo start can dip +3V3.
+    C20 22 µF (VSYS) and C13 100 µF + C19 22 µF (SERVO_PWR) buffer the edge.
+  - USB budget: with 5.1 kΩ CC pull-downs a USB 2.0 port only guarantees 500 mA. Charger 303 mA + ESP32-C3
+    (WiFi TX peaks ~350 mA) + servo can exceed it; phone chargers (≥ 1.5 A) are fine.
+  - USB inrush is unchanged: the servo bulk caps sit behind Q6's soft start (C22), not on VBUS.
+- **v8 action:** `SERVO_PWR` net = Q6.D, C22, C19 22 µF, C13 100 µF, J3.2 (Power class). C20 stays as VSYS bulk.
+  IO10 renamed `SERVO_EN`. Firmware: enable ≥ 50 ms before a move; skip moves below VBAT ≈ 3.5 V;
+  move with WiFi idle; no PWM while SERVO_EN is low.
+- **Validate:**
+  - [ ] On battery at 4.2 / 3.7 / 3.5 V (bench supply in place of the cell): the servo reaches every IAQ position
+        and holds it; record move time and current (peak and average).
+  - [ ] Scope +3V3 during a servo start at VBAT = 3.5 V: no ESP brownout reset; adjust the firmware cut-off threshold.
+  - [ ] On USB from a laptop port while charging an empty cell: servo move with WiFi on and off — no USB
+        disconnect or brownout.
+  - [ ] Sleep floor unchanged (servo rail 0 V, F20).
+
+## F26 — EPAD vias with the 0.3 mm minimum drill (v8)
+
+- **Constraint:** the board keeps PCBWay's standard minimum drill **0.3 mm** (`min_through_hole_diameter` 0.3).
+  Both stock KiCad footprints (`RF_Module:ESP32-C3-WROOM-02` and `…-02U`) have 12 × 0.2 mm drills in the EPAD (F15).
+- **Options considered:** (1) Espressif's footprint + board vias — **chosen**; (2) a project copy of the stock
+  footprint with 0.3 mm drills (breaks the "no custom footprints" rule; 0.55 mm via pitch leaves 0.25 mm between holes);
+  (3) no EPAD vias (weaker RF ground); (4) another module — a full re-layout.
+- **v8 action:**
+  - U1 → **`Espressif:ESP32-C3-WROOM-02`** from [espressif/kicad-libraries](https://github.com/espressif/kicad-libraries)
+    (`v8/Espressif.pretty`, STEP in `air-quality-pcb-v8.3dshapes/`). The EPAD is a 3 × 3 array of 0.7 mm pads
+    (pitch 1.05–1.15 mm), **no drills**. Its origin is 0.1 mm off the stock one; U1 now sits at **(55, 33.4)** so
+    all pads are at the same board positions as in v7 (the routing still lands on them).
+  - **4 GND vias 0.6 / 0.3 mm** at the gap crossings of the EPAD pads: **(55.385 | 56.485, 33.15 | 34.25)**. The via ring
+    just touches the four pad corners (0.27 mm from the via centre), so the vias connect directly; the hole stays
+    0.12 mm clear of the pad openings. Vias are tented (board setting), which limits wicking. The GND pour (solid
+    connection) also joins the nine pads.
+  - Board rule area **ANTENNA_KEEPOUT** replaces the stock footprint's built-in 28 × 11 mm keepout (F7).
+- **Validate:**
+  - [ ] DFM at PCBWay: no drill below 0.3 mm, no surcharge.
+  - [ ] Gerber/3D check: the Espressif STEP model sits on the footprint (offset −9 / −7 mm in the footprint);
+        the EPAD paste openings are the nine 0.7 mm squares.
+  - [ ] First article: X-ray or a cross-check of the EPAD solder joint (no large voids, no solder through the tented vias).
+  - [ ] RF (F7 check) is no worse than the v7 expectation.
+  - [ ] The U1 silkscreen is clipped at the antenna notch (2 DRC warnings) — cosmetic; accept or hide those lines.
+
 ---
 
 ## Sources
 
 - Espressif, [ESP32-C3 PCB layout guidelines](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/pcb-layout-design.html) and [schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html)
 - Espressif, [ESP32-C3-MINI-1 datasheet](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) (strapping, current consumption tables — same ESP32-C3 chip); [ESP32-C3-WROOM-02-N4 at Digi-Key](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-C3-WROOM-02-N4/14553031)
-- Aerosemi, [MT3608 datasheet](https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf)
+- Espressif, [KiCad libraries](https://github.com/espressif/kicad-libraries) (WROOM-02 footprint and STEP, F26)
+- Aerosemi, [MT3608 datasheet](https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf) (v7 boost, removed in v8)
+- TowerPro SG92R specification (4.8–6 V, figures at 4.8 V); Diodes Inc. DMG2305UX and AP2112K datasheets (F25)
 - Microchip, [MCP73831 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf)
 - C&K, OS series datasheet ([LCSC copy](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1811061532_C-K-OS102011MA1QN1_C226259.pdf)); [OS103011MA7QP1 at Digi-Key](https://www.digikey.com/en/products/detail/c-k/OS103011MA7QP1/1981432); [OS102011MA1QN1 at LCSC](https://www.lcsc.com/product-detail/Slide-Switches_C-K-OS102011MA1QN1_C226259.html)
 - Kingbright KPA-3010SGC ([Farnell](https://uk.farnell.com/kingbright/kpa-3010sgc/led-side-view-smd-green-12mcd/dp/8530335)); JST SH SM04B-SRSS-TB; onsemi BSS138

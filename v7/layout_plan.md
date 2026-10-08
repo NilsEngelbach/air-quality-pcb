@@ -73,7 +73,7 @@ All front faces sit on the flat (y = 84). Left → right: **D3 · SW4 · J1 · S
 | Ref | Rotation | Position (approx.) | Edge rule |
 |---|---|---|---|
 | **J1** USB-C | receptacle opening down | origin ≈ (55, 81.3) | body front ≈ 1.0 mm past the edge (max ~1.3 mm). Front shield pads ≥ 0.5 mm inside the edge |
-| **SW4** OS103011MA7QP1 | actuator down | pin 1 ≈ (36.4, 81.75) | **body front flush with y = 84** (pin row 2.25 mm behind it) → actuator 4 mm out |
+| **SW4** OS103011MA7QP1 | actuator down | pin 1 ≈ (36.4, 81.75) | **body front flush with y = 84** (pin row 2.15 mm behind it) → actuator 4 mm out |
 | **SW3** OS102011MA1QN1 | actuator down | pin 1 ≈ (65.6, 81.75) | same as SW4 |
 | **D3** KPA-3010 (blue status) | lens facing outward at ~133° | ≈ (30.9, 80.8), on the arc just left of the flat | lens flush to ≤ 0.3 mm past the edge; pads ≥ 0.5 mm inside |
 | **D2** KPA-3010SGC (green CHG) | lens facing outward at ~47° | ≈ (79.1, 80.8), on the arc just right of the flat (mirror of D3) | same as D3; clear of H1's keepout (x 71–77, y 71–77) |

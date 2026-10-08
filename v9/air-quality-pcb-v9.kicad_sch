@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Air Quality Checker")
-		(rev "G")
+		(rev "I")
 		(comment 1 "ESP32-C3 + BME688 + SG92R (v7)")
 	)
 	(lib_symbols
@@ -1996,184 +1996,6 @@
 					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4935,217 +4757,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:MT3608"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -2.54 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MT3608"
-				(at -3.81 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 1.27 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf"
-				(at -6.35 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "High Efficiency 1.2MHz 2A Step Up Converter, 2-24V Vin, 28V Vout, 4A current limit, 1.2MHz, SOT23-6"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Step-Up Boost DC-DC Regulator Adjustable"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT*23*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MT3608_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MT3608_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Sensor:BME680"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7356,7 +6967,7 @@
 		)
 		(uuid "10a49552-98d9-4e9b-ae65-10bf91db51d1")
 	)
-	(text "Servo rail load switch (v7). A boost converter is not off when EN is low: VSYS -> L1 -> D4 still feeds SERVO_5V (servo idle + R22/R23).\nQ6 disconnects BOOST_IN from VSYS while BOOST_EN (IO10) is low. Q7 pulls the gate to ~VSYS-2.5 V via R28 when BOOST_EN is high.\nC22 (gate-drain) slews BOOST_IN at ~0.5 V/ms -> ~80 mA inrush into ~166 uF downstream. Firmware: BOOST_EN high >= 100 ms before a move."
+	(text "Servo rail load switch (v8: no boost, the servo runs from VSYS = USB via D1 ~4.5 V or the battery 3.0-4.2 V).\nQ6 connects SERVO_PWR to VSYS only while SERVO_EN (IO10) is high.\nQ7 pulls the gate to ~VSYS-2.5 V via R28; R4 keeps it off at reset/sleep.\nC22 (gate-drain) slews SERVO_PWR at ~0.5 V/ms -> ~60 mA inrush into C13 + C19 (122 uF).\nFirmware: SERVO_EN high >= 50 ms before a move; skip moves below VBAT ~3.5 V."
 		(exclude_from_sim no)
 		(at 108.712 269.24 0)
 		(effects
@@ -7411,7 +7022,7 @@
 		)
 		(uuid "50641f6e-e217-4c8d-979f-b36f7a913e53")
 	)
-	(text "ESP32-C3 notes (MCU box):\nStrapping: IO2 (R2), IO8 (R5), IO9 (R3) pulled up 10k -> SPI boot.\nBOOT (SW2) low at reset -> USB download mode.\nIO8 drives the STATUS LED active-low (LED off = strap high).\nIO10 = BOOST_EN; R4 100k keeps the boost off at reset/sleep.\nEN: R1 10k + C1 1uF RC delay (Espressif HW design guide).\nUSB: IO18/IO19 native USB Serial/JTAG - no UART bridge.\n\nSW4 (OS103011MA7QP1, common = pin 2):\nPOS1 MODE_A (IO3) low = OFF | POS2 both high = SPARSE | POS3 MODE_B (IO4) low = CONTINUOUS.\n\nInternal pull-ups only. IO3/IO4 are deep-sleep wake-capable (GPIO0-5). VBAT_SENSE IO0 / VBUS_SENSE IO1 = ADC1."
+	(text "ESP32-C3 notes (MCU box):\nStrapping: IO2 (R2), IO8 (R5), IO9 (R3) pulled up 10k -> SPI boot.\nBOOT (SW2) low at reset -> USB download mode.\nIO8 drives the STATUS LED active-low (LED off = strap high).\nIO10 = SERVO_EN; R4 100k keeps the servo rail off at reset/sleep.\nEN: R1 10k + C1 1uF RC delay (Espressif HW design guide).\nUSB: IO18/IO19 native USB Serial/JTAG - no UART bridge.\n\nSW4 (OS103011MA7QP1, common = pin 2):\nPOS1 MODE_A (IO4) low = OFF | POS2 both high = SPARSE | POS3 MODE_B (IO5) low = CONTINUOUS.\n\nInternal pull-ups only. IO4/IO5 are deep-sleep wake-capable (GPIO0-5). VBAT_SENSE IO3 / VBUS_SENSE IO1 = ADC1."
 		(exclude_from_sim no)
 		(at 270.002 96.266 0)
 		(effects
@@ -7458,17 +7069,6 @@
 		)
 		(uuid "a519402f-5ba2-49c1-b1ea-cef64d835930")
 	)
-	(text "Layout: hot loop U7 SW -> D4 -> C19/C21 -> GND -> U7 pin 2\nwithin ~8x8 mm on F.Cu. C18 (22 uF) at U7 pin 5, L1 at pin 1,\nR22/R23 at pin 3. No signals under L1 / the SW node."
-		(exclude_from_sim no)
-		(at 108.458 261.874 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b1bca5cb-d516-4f8a-a73a-a3450ef56bad")
-	)
 	(text "USB-C  Input + USB  data  + ESD + VBUS  sense"
 		(exclude_from_sim no)
 		(at 281.432 24.13 0)
@@ -7493,7 +7093,7 @@
 		)
 		(uuid "cbec1129-d7b4-4437-a5a1-a2539305ee21")
 	)
-	(text "Servo  5V  Boost  (MT3608)"
+	(text "Servo  Rail  Load  Switch"
 		(exclude_from_sim no)
 		(at 108.966 188.468 0)
 		(effects
@@ -7554,12 +7154,6 @@
 		(uuid "1d380327-b1f1-4065-865e-9c98ae71e538")
 	)
 	(junction
-		(at 161.29 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e1955e6-b82a-40b4-82a0-00dc5a30cdc4")
-	)
-	(junction
 		(at 142.24 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7614,18 +7208,6 @@
 		(uuid "36028648-2e07-4feb-92eb-e07125f58b7b")
 	)
 	(junction
-		(at 215.9 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38ca65da-ad0d-4db4-a20d-2bd234a59d98")
-	)
-	(junction
-		(at 223.52 237.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39cd9dbd-0d81-42ce-807e-2257bd20c58d")
-	)
-	(junction
 		(at 71.12 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7674,12 +7256,6 @@
 		(uuid "485872a1-f3c2-45ec-886d-c8cb464b3117")
 	)
 	(junction
-		(at 182.88 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "495eb62a-432a-4c96-9449-896732df6af0")
-	)
-	(junction
 		(at 87.63 236.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7726,12 +7302,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69f9fa62-c4b7-4dc9-b68f-57c9ca809338")
-	)
-	(junction
-		(at 199.39 237.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ab6d3c5-6ac5-49c5-b43f-25a503a30924")
 	)
 	(junction
 		(at 124.46 90.17)
@@ -7840,12 +7410,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a804c425-acca-42ee-9673-c534b86740e4")
-	)
-	(junction
-		(at 233.68 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a910e0e5-7719-4476-8a5b-a5e8ac41f050")
 	)
 	(junction
 		(at 142.24 152.4)
@@ -7968,12 +7532,6 @@
 		(uuid "e91363a5-8cfc-41f6-9bd3-bf4c58b172c6")
 	)
 	(junction
-		(at 199.39 224.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e93b0900-3c2c-4917-8134-bdc3474e6ad2")
-	)
-	(junction
 		(at 96.52 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7984,12 +7542,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edc245b8-4a12-4a98-9c76-1bed2f8b04e4")
-	)
-	(junction
-		(at 171.45 237.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f02497b6-f3dd-4bdf-aa1f-3883ee7b0dbd")
 	)
 	(junction
 		(at 140.97 228.6)
@@ -8020,10 +7572,6 @@
 	(no_connect
 		(at 278.13 140.97)
 		(uuid "661e00a5-138d-4161-b0f6-4168e2544d97")
-	)
-	(no_connect
-		(at 176.53 222.25)
-		(uuid "b7bf9ea6-b5b8-496c-ad3d-2be5fcec19c8")
 	)
 	(no_connect
 		(at 162.56 43.18)
@@ -8072,16 +7620,6 @@
 			(type default)
 		)
 		(uuid "00f9014c-4402-4390-b7fc-5385b31b0fe6")
-	)
-	(wire
-		(pts
-			(xy 171.45 229.87) (xy 171.45 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0106ef92-adcb-4a20-aa40-c89f90cd048e")
 	)
 	(wire
 		(pts
@@ -8185,6 +7723,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 219.71) (xy 223.52 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c37ec80-b4e5-4d76-a6b9-58cba2be4388")
+	)
+	(wire
+		(pts
 			(xy 337.82 53.34) (xy 337.82 57.15)
 		)
 		(stroke
@@ -8262,16 +7810,6 @@
 			(type default)
 		)
 		(uuid "1096a657-ac93-4cab-9726-70e1fda61193")
-	)
-	(wire
-		(pts
-			(xy 233.68 237.49) (xy 233.68 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1115a6a3-d420-4c80-8183-26bb3edf116b")
 	)
 	(wire
 		(pts
@@ -8595,16 +8133,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 224.79) (xy 199.39 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "364d97b2-41c9-4899-a1cc-d11a35f400a5")
-	)
-	(wire
-		(pts
 			(xy 204.47 140.97) (xy 204.47 146.05)
 		)
 		(stroke
@@ -8672,16 +8200,6 @@
 			(type default)
 		)
 		(uuid "3dabc549-2228-49ea-8f3c-89657db2710c")
-	)
-	(wire
-		(pts
-			(xy 215.9 224.79) (xy 215.9 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e5a8b13-53c7-405c-b641-c5a215bedec3")
 	)
 	(wire
 		(pts
@@ -8835,7 +8353,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 213.36) (xy 156.21 224.79)
+			(xy 156.21 213.36) (xy 156.21 215.9)
 		)
 		(stroke
 			(width 0)
@@ -8895,16 +8413,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 219.71) (xy 223.52 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53514866-4f68-48ec-abbd-0fa5b503c5f7")
-	)
-	(wire
-		(pts
 			(xy 280.67 138.43) (xy 303.53 138.43)
 		)
 		(stroke
@@ -8922,6 +8430,16 @@
 			(type default)
 		)
 		(uuid "55fbe2d9-cba2-4f6b-9d47-06454a1fa221")
+	)
+	(wire
+		(pts
+			(xy 171.45 237.49) (xy 223.52 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5692a53c-f300-4f0d-9d43-5c813e465fde")
 	)
 	(wire
 		(pts
@@ -9012,16 +8530,6 @@
 			(type default)
 		)
 		(uuid "5bcb581a-02b5-48bc-b6f8-f7142a74af49")
-	)
-	(wire
-		(pts
-			(xy 179.07 224.79) (xy 203.2 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f35b588-e039-4d32-a429-4065195aa6fc")
 	)
 	(wire
 		(pts
@@ -9165,16 +8673,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 224.79) (xy 215.9 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "700b7e79-a8b6-4a58-840d-a0259b47a87f")
-	)
-	(wire
-		(pts
 			(xy 113.03 139.7) (xy 109.22 139.7)
 		)
 		(stroke
@@ -9202,26 +8700,6 @@
 			(type default)
 		)
 		(uuid "70a323f9-ea23-4e6a-8ce8-57a2dd7d83e9")
-	)
-	(wire
-		(pts
-			(xy 223.52 219.71) (xy 233.68 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71124e98-c0dc-4175-b707-0e15c8dbb29f")
-	)
-	(wire
-		(pts
-			(xy 151.13 219.71) (xy 161.29 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71d99c80-38f6-4553-b3c2-1c4f3a31a0ed")
 	)
 	(wire
 		(pts
@@ -9295,16 +8773,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 219.71) (xy 203.2 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "790cca43-dedb-45b5-b0ae-05de8665711c")
-	)
-	(wire
-		(pts
 			(xy 106.68 88.9) (xy 106.68 90.17)
 		)
 		(stroke
@@ -9322,6 +8790,16 @@
 			(type default)
 		)
 		(uuid "7a7d7f5f-9c5d-4c39-b804-d779e6ede6ac")
+	)
+	(wire
+		(pts
+			(xy 223.52 219.71) (xy 238.76 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a882dac-709a-422c-9d4b-6ea18207879b")
 	)
 	(wire
 		(pts
@@ -9375,16 +8853,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 237.49) (xy 223.52 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8066b83c-9cef-427a-913b-834b20da0dc4")
-	)
-	(wire
-		(pts
 			(xy 374.65 33.02) (xy 378.46 33.02)
 		)
 		(stroke
@@ -9422,16 +8890,6 @@
 			(type default)
 		)
 		(uuid "81faa3a9-5f36-4269-b79d-f4d8e291ee64")
-	)
-	(wire
-		(pts
-			(xy 161.29 210.82) (xy 167.64 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82504df5-37bf-4a9d-8009-375ebd7e65d7")
 	)
 	(wire
 		(pts
@@ -9505,16 +8963,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 210.82) (xy 182.88 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8907e30c-cf36-4608-93bc-2a9807f210b9")
-	)
-	(wire
-		(pts
 			(xy 82.55 160.02) (xy 121.92 160.02)
 		)
 		(stroke
@@ -9532,16 +8980,6 @@
 			(type default)
 		)
 		(uuid "89e654a1-7a3a-4b3a-ada8-996dcd3a78cb")
-	)
-	(wire
-		(pts
-			(xy 233.68 219.71) (xy 238.76 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e092971-0cba-4fdf-b29f-77f7d058c18a")
 	)
 	(wire
 		(pts
@@ -9572,16 +9010,6 @@
 			(type default)
 		)
 		(uuid "91c79bb2-6851-447f-a786-e08067f40923")
-	)
-	(wire
-		(pts
-			(xy 161.29 234.95) (xy 161.29 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92fef05c-1f16-49a6-8b54-9a9261153efd")
 	)
 	(wire
 		(pts
@@ -9655,16 +9083,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 210.82) (xy 182.88 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a31e8216-5883-4950-a6f6-6186f88e2a18")
-	)
-	(wire
-		(pts
 			(xy 223.52 233.68) (xy 223.52 237.49)
 		)
 		(stroke
@@ -9675,16 +9093,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 237.49) (xy 233.68 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4612c0f-3808-49a6-83b2-f34fd9575744")
-	)
-	(wire
-		(pts
 			(xy 40.64 208.28) (xy 40.64 215.9)
 		)
 		(stroke
@@ -9692,16 +9100,6 @@
 			(type default)
 		)
 		(uuid "a4f85c9b-496f-4d06-af1d-686ccee1df8c")
-	)
-	(wire
-		(pts
-			(xy 233.68 219.71) (xy 233.68 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6a2d65d-cf9d-475d-bd9d-a052012ab2c1")
 	)
 	(wire
 		(pts
@@ -9875,16 +9273,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 210.82) (xy 161.29 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b33efa4f-13bf-45b7-876b-1dec74219101")
-	)
-	(wire
-		(pts
 			(xy 342.9 62.23) (xy 350.52 62.23)
 		)
 		(stroke
@@ -9982,26 +9370,6 @@
 			(type default)
 		)
 		(uuid "c5468196-cf9b-4943-b7ff-31eacdcb96a3")
-	)
-	(wire
-		(pts
-			(xy 210.82 219.71) (xy 215.9 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5dedd3b-c606-405b-98a2-31256ebed051")
-	)
-	(wire
-		(pts
-			(xy 156.21 224.79) (xy 163.83 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c624a99c-3167-4aa7-9630-cad4f966659c")
 	)
 	(wire
 		(pts
@@ -10162,16 +9530,6 @@
 			(type default)
 		)
 		(uuid "d70d1eed-8d3d-411e-8da3-94a531644e33")
-	)
-	(wire
-		(pts
-			(xy 199.39 234.95) (xy 199.39 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d84bf9e2-2e3c-423e-9aa4-c8e9274f294e")
 	)
 	(wire
 		(pts
@@ -10515,16 +9873,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 219.71) (xy 163.83 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7f7c9fe-fc5f-4b19-b6f1-6f3a4ffa4c80")
-	)
-	(wire
-		(pts
 			(xy 40.64 196.85) (xy 40.64 208.28)
 		)
 		(stroke
@@ -10683,7 +10031,7 @@
 		)
 		(uuid "162dc276-1c76-41d9-ac1d-e092aeb9f8d6")
 	)
-	(label "SERVO_PWM"
+	(label "MODE_B"
 		(at 132.08 58.42 180)
 		(effects
 			(font
@@ -10793,7 +10141,7 @@
 		)
 		(uuid "24560e4d-c96f-4fc5-a7ff-ee8705b44c47")
 	)
-	(label "BOOST_IN"
+	(label "SERVO_PWR"
 		(at 260.35 41.91 270)
 		(effects
 			(font
@@ -10873,7 +10221,7 @@
 		)
 		(uuid "428c89d4-c3ae-4081-ab55-976e5154b1f8")
 	)
-	(label "MODE_B"
+	(label "MODE_A"
 		(at 132.08 55.88 180)
 		(effects
 			(font
@@ -10953,16 +10301,6 @@
 		)
 		(uuid "5c9facaa-ab0b-4f01-81dc-becb9fd2dcb2")
 	)
-	(label "BOOST_IN"
-		(at 163.83 219.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "609f84e2-417f-461e-8f8f-184a3774f1a3")
-	)
 	(label "GND"
 		(at 147.32 81.28 270)
 		(effects
@@ -11003,7 +10341,7 @@
 		)
 		(uuid "62acfc81-d803-4b5c-aac4-7b4905470e47")
 	)
-	(label "VBAT_SENSE"
+	(label "SERVO_PWM"
 		(at 132.08 45.72 180)
 		(effects
 			(font
@@ -11043,7 +10381,7 @@
 		)
 		(uuid "73f9fe2e-2f2e-4f1b-9302-d9e7b0f48644")
 	)
-	(label "BOOST_GATE"
+	(label "SERVO_GATE"
 		(at 140.97 228.6 180)
 		(effects
 			(font
@@ -11053,7 +10391,7 @@
 		)
 		(uuid "795d097e-a95a-416c-a3be-faf647ce6a42")
 	)
-	(label "BOOST_PD"
+	(label "SERVO_PD"
 		(at 151.13 205.74 180)
 		(effects
 			(font
@@ -11093,7 +10431,7 @@
 		)
 		(uuid "7ec6902e-6885-4b3d-a374-98191b322596")
 	)
-	(label "SERVO_5V"
+	(label "SERVO_PWR"
 		(at 356.87 132.08 180)
 		(effects
 			(font
@@ -11273,16 +10611,6 @@
 		)
 		(uuid "aea14db2-dd48-401c-a5ea-e1358f2a581d")
 	)
-	(label "BOOST_FB"
-		(at 187.96 224.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b210d8e4-92b1-4769-afdb-a6e6efb2953a")
-	)
 	(label "SCL"
 		(at 332.74 215.9 180)
 		(effects
@@ -11323,7 +10651,7 @@
 		)
 		(uuid "bbcb160f-95e1-4ac8-854d-213e4a842e84")
 	)
-	(label "BOOST_EN"
+	(label "SERVO_EN"
 		(at 132.08 71.12 180)
 		(effects
 			(font
@@ -11353,13 +10681,13 @@
 		)
 		(uuid "c8496d8d-ad8b-452f-ba9e-3066163a7476")
 	)
-	(label "BOOST_EN"
-		(at 163.83 224.79 180)
+	(label "SERVO_EN"
+		(at 156.21 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "c9a81d14-6c6f-48b1-a6a2-21f35cfda98f")
 	)
@@ -11423,7 +10751,7 @@
 		)
 		(uuid "d3dccff9-be15-418c-8742-231d7f8c02f7")
 	)
-	(label "SERVO_5V"
+	(label "SERVO_PWR"
 		(at 238.76 219.71 0)
 		(effects
 			(font
@@ -11473,16 +10801,6 @@
 		)
 		(uuid "e0486321-0848-46c5-be42-ba724aca3b2d")
 	)
-	(label "BOOST_SW"
-		(at 187.96 219.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3f078e9-5ddf-45cc-9122-0650d96269a5")
-	)
 	(label "CC1"
 		(at 309.88 38.1 0)
 		(effects
@@ -11503,7 +10821,7 @@
 		)
 		(uuid "e64c1044-8b1f-4009-80a8-5f925f50f0c2")
 	)
-	(label "MODE_A"
+	(label "VBAT_SENSE"
 		(at 132.08 53.34 180)
 		(effects
 			(font
@@ -11686,7 +11004,7 @@
 			(uuid "4a6b8873-9343-4c3c-98cf-c3687e824bcd")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R18")
 					(unit 1)
@@ -11787,7 +11105,7 @@
 			(uuid "a10cd2da-8e77-4721-9b34-2ccdc9985245")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C12")
 					(unit 1)
@@ -11888,7 +11206,7 @@
 			(uuid "95f912e0-362e-4bb2-85f0-7ce68081f9bd")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C6")
 					(unit 1)
@@ -11997,7 +11315,7 @@
 			(uuid "53979d72-a55b-4c24-b2b4-53dab3948e88")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q7")
 					(unit 1)
@@ -12074,7 +11392,7 @@
 			(uuid "29a19511-d531-471d-8f10-27718088baf9")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "#FLG05")
 					(unit 1)
@@ -12175,7 +11493,7 @@
 			(uuid "f3f27e74-0534-4939-9101-9f5ab73415a2")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R31")
 					(unit 1)
@@ -12276,112 +11594,9 @@
 			(uuid "75bb7929-a3a9-4bf4-9420-46b054235e1a")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 233.68 229.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "276533a5-693c-4eb0-8347-1513fdf156c2")
-		(property "Reference" "C21"
-			(at 236.982 228.854 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 236.474 230.886 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 234.645 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 22UF 16V X5R 0805"
-			(at 233.68 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 233.68 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21A226KOQNNNG"
-			(at 233.68 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d72938eb-c39c-4964-bbf2-9c608d71b5ad")
-		)
-		(pin "2"
-			(uuid "9e483ace-a2d5-4d74-938a-ef00fe51fcb0")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -12480,7 +11695,7 @@
 			(uuid "f32bd386-0e49-4caf-9d3e-1836f7e9e6e5")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R12")
 					(unit 1)
@@ -12581,7 +11796,7 @@
 			(uuid "062ea8b6-011a-4c9d-9032-4943e195f4c9")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C16")
 					(unit 1)
@@ -12692,7 +11907,7 @@
 			(uuid "a24c971e-ba52-494e-ac21-b084e1d39427")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "J5")
 					(unit 1)
@@ -12793,7 +12008,7 @@
 			(uuid "555bd37c-11ae-46ed-912d-694c5a602de3")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R5")
 					(unit 1)
@@ -12894,7 +12109,7 @@
 			(uuid "0b221cf3-37d0-4b45-a86f-3bba43b0ffb3")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C13")
 					(unit 1)
@@ -12905,6 +12120,7 @@
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 337.82 62.23 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13007,7 +12223,7 @@
 			(uuid "0110193b-b1cc-4b75-bc5c-b29df9fcef9b")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U6")
 					(unit 1)
@@ -13110,7 +12326,7 @@
 			(uuid "4391c865-1336-4f92-9080-281c0ab323dd")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C20")
 					(unit 1)
@@ -13216,7 +12432,7 @@
 			(uuid "5e187296-9370-43a1-bdff-d4426567b850")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q5")
 					(unit 1)
@@ -13317,7 +12533,7 @@
 			(uuid "9d1849bd-b76c-42f0-999f-8239272751ae")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R3")
 					(unit 1)
@@ -13418,7 +12634,7 @@
 			(uuid "50fa9584-18e9-49af-99aa-b3ec9d929a1f")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R15")
 					(unit 1)
@@ -13495,7 +12711,7 @@
 			(uuid "8e1b0553-43e2-4b95-bca9-df9802e7ddf0")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "#FLG03")
 					(unit 1)
@@ -13596,110 +12812,9 @@
 			(uuid "8102f454-1b01-47c8-9036-e0cee91c0c16")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 207.01 224.79 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4caf9aec-0524-4e0c-acb8-5d49d34b124a")
-		(property "Reference" "R22"
-			(at 207.01 227.584 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "82k"
-			(at 207.01 229.616 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 207.01 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "RES 82K OHM 1% 1/8W 0805"
-			(at 207.01 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "RC0805FR-0782KL"
-			(at 207.01 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 207.01 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a18f6128-5d85-4e40-b659-b628095608ea")
-		)
-		(pin "2"
-			(uuid "d2f94894-ca62-4523-85f3-50b04d8ce754")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -13798,7 +12913,7 @@
 			(uuid "c93bdd4a-935f-4e79-a556-84746006618b")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "SW2")
 					(unit 1)
@@ -13899,7 +13014,7 @@
 			(uuid "363d4a3e-1892-4f17-8333-654e4c24e5f0")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R26")
 					(unit 1)
@@ -14000,7 +13115,7 @@
 			(uuid "6761fdea-9099-4983-93d0-3c9323535dac")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R13")
 					(unit 1)
@@ -14101,7 +13216,7 @@
 			(uuid "3fe50eec-ff27-472a-805c-a91a07341534")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C11")
 					(unit 1)
@@ -14202,7 +13317,7 @@
 			(uuid "0ada4704-bd19-4db6-b697-9ed50cc1d7be")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "D3")
 					(unit 1)
@@ -14241,7 +13356,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-C3-WROOM-02"
+		(property "Footprint" "Espressif:ESP32-C3-WROOM-02"
 			(at 147.32 59.055 0)
 			(hide yes)
 			(show_name no)
@@ -14354,7 +13469,7 @@
 			(uuid "50bebc47-c923-4924-8027-45bff4fc9876")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U1")
 					(unit 1)
@@ -14431,7 +13546,7 @@
 			(uuid "16c4be92-22b7-4ef1-9044-30f17ee96163")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "#FLG04")
 					(unit 1)
@@ -14550,7 +13665,7 @@
 			(uuid "0b913899-b89a-4af3-9d50-94036a74d4f5")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U5")
 					(unit 1)
@@ -14651,122 +13766,9 @@
 			(uuid "01b42c3c-63e2-41ad-96d2-6f5376fbc1e2")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:MT3608")
-		(at 171.45 222.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70999474-48fa-4280-9237-954b12c62423")
-		(property "Reference" "U7"
-			(at 177.8 228.854 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MT3608"
-			(at 177.8 231.648 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 171.45 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "IC BOOST CONVERTER ADJ 1.2A SOT-23-6"
-			(at 171.45 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "MT3608"
-			(at 171.45 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Aerosemi Tech"
-			(at 171.45 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d8ed852-10e3-42af-9aed-88fdf885c644")
-		)
-		(pin "2"
-			(uuid "a69c0913-9da8-45bb-bb31-fb13843cf94e")
-		)
-		(pin "3"
-			(uuid "1fb86f2e-fa10-42bd-bbfa-9faff14b09db")
-		)
-		(pin "4"
-			(uuid "4ad32ed0-7ad9-4e9f-8358-c040712d1583")
-		)
-		(pin "5"
-			(uuid "b594db91-624f-4fb6-ad15-a174bb271f52")
-		)
-		(pin "6"
-			(uuid "12f47219-8c90-43da-9e9d-1fd7bce72ee2")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -14865,7 +13867,7 @@
 			(uuid "a5203325-624f-489b-8884-d5d8bd32f45a")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "D1")
 					(unit 1)
@@ -15011,7 +14013,7 @@
 			(uuid "816f2089-ab65-4f07-96e8-49a5b517066e")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "J1")
 					(unit 1)
@@ -15115,7 +14117,7 @@
 			(uuid "1af98be6-8f36-444a-b589-f1176db23d6e")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "J3")
 					(unit 1)
@@ -15216,7 +14218,7 @@
 			(uuid "f2bfc861-35b7-417f-9068-85727c2f5ebf")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R2")
 					(unit 1)
@@ -15317,7 +14319,7 @@
 			(uuid "6f3252ed-5dd4-4680-b871-0c819813daf6")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R11")
 					(unit 1)
@@ -15418,7 +14420,7 @@
 			(uuid "8fe3933e-699f-43d0-afd3-b6d29d41d428")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C8")
 					(unit 1)
@@ -15519,7 +14521,7 @@
 			(uuid "5ecd1256-f8fb-4cb4-9375-1f508e2e4ed3")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R25")
 					(unit 1)
@@ -15620,7 +14622,7 @@
 			(uuid "32c4f2d8-cb7e-4b97-b52d-4cc311ada4c6")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R9")
 					(unit 1)
@@ -15730,7 +14732,7 @@
 			(uuid "55c44f78-4965-4808-abc5-d6e0c6ec8473")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U4")
 					(unit 1)
@@ -15831,7 +14833,7 @@
 			(uuid "08011618-d579-40f2-8fa3-6f7ab52263c6")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R29")
 					(unit 1)
@@ -15932,7 +14934,7 @@
 			(uuid "5cbcac68-22a7-4b34-bf27-e8005599d81f")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R24")
 					(unit 1)
@@ -16033,7 +15035,7 @@
 			(uuid "099ea9ec-b1cd-429e-ab75-8628643ea504")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R20")
 					(unit 1)
@@ -16134,110 +15136,9 @@
 			(uuid "432da277-0ae6-4d32-9898-be08b98a8f2d")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 161.29 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "917ebbc3-44b3-4f70-b706-b2601ae4c9db")
-		(property "Reference" "C18"
-			(at 156.718 229.362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22uF"
-			(at 156.464 231.902 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 161.29 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "CAP CER 22UF 16V X5R 0805"
-			(at 161.29 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "CL21A226KOQNNNG"
-			(at 161.29 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 161.29 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f864418b-0468-40ab-960a-fefe2a9b1b77")
-		)
-		(pin "2"
-			(uuid "a7b9b0d1-eb5d-4ed9-8451-6b865bf7d9d5")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -16336,7 +15237,7 @@
 			(uuid "2170b7d4-8b35-4138-99d7-894b3a456335")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R21")
 					(unit 1)
@@ -16437,7 +15338,7 @@
 			(uuid "e20e4896-6c4f-4975-8707-3eed7a14e2ab")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R17")
 					(unit 1)
@@ -16541,7 +15442,7 @@
 			(uuid "41534cb0-f85f-4971-b725-2aad8d90230f")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q3")
 					(unit 1)
@@ -16659,7 +15560,7 @@
 			(uuid "265baa7b-7454-43f2-9bdb-15e14bbadd63")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U8")
 					(unit 1)
@@ -16760,7 +15661,7 @@
 			(uuid "ef71c760-e0f5-4964-be32-1a3eb1d2d0ac")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "SW1")
 					(unit 1)
@@ -16869,7 +15770,7 @@
 			(uuid "76076343-60cb-49f7-9154-c88a0649e1d9")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q9")
 					(unit 1)
@@ -16972,110 +15873,9 @@
 			(uuid "023398e3-707e-47aa-9816-accfcae8fb9f")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 171.45 210.82 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad8c8911-ee04-45df-9f2f-e2b487a73f4e")
-		(property "Reference" "L1"
-			(at 171.704 208.28 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uH"
-			(at 171.196 212.344 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4030S"
-			(at 171.45 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "FIXED IND 10UH 1.5A 130 MOHM SMD 4x4x3"
-			(at 171.45 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "SWPA4030S100MT"
-			(at 171.45 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
-			(at 171.45 210.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2004b7a9-0185-4e13-8090-942941730dea")
-		)
-		(pin "2"
-			(uuid "f3859921-a921-4f55-8099-0d18b95bcaac")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -17177,110 +15977,9 @@
 			(uuid "18215e30-f741-4c49-a237-6a2763aa69aa")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 207.01 219.71 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b2dbae30-47e9-46b2-9255-3ff6459f0b18")
-		(property "Reference" "D4"
-			(at 206.756 212.852 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PMEG4030ER"
-			(at 206.756 215.392 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 207.01 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4030ER.pdf"
-			(at 207.01 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "DIODE SCHOTTKY 40V 3A SOD123W"
-			(at 207.01 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "PMEG4030ER,115"
-			(at 207.01 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Nexperia"
-			(at 207.01 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "09c52f0c-e72d-4153-9907-355aadfb4ccd")
-		)
-		(pin "2"
-			(uuid "4d2d543b-1115-4e4c-abbc-e0c37e4ac921")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -17379,7 +16078,7 @@
 			(uuid "8f2e78b5-5371-440f-bc20-fd3fa1cf7c80")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C14")
 					(unit 1)
@@ -17480,7 +16179,7 @@
 			(uuid "76df70a8-70d9-4aaa-84bb-6c71968e4492")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C19")
 					(unit 1)
@@ -17589,7 +16288,7 @@
 			(uuid "c0e93caf-d93f-479a-b34a-302dec0205c4")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q10")
 					(unit 1)
@@ -17692,7 +16391,7 @@
 			(uuid "e0989dda-79db-479e-aadc-f8b00e0f6231")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C22")
 					(unit 1)
@@ -17793,7 +16492,7 @@
 			(uuid "74f3bed9-ce07-4ee7-928b-875d9a1de20b")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "J4")
 					(unit 1)
@@ -17900,110 +16599,9 @@
 			(uuid "276fa91b-2666-4699-a261-6cc94e433ef1")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 199.39 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cc5aef04-6e42-4aed-bb48-a9712afe0765")
-		(property "Reference" "R23"
-			(at 195.072 229.362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "11k"
-			(at 195.326 232.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 199.39 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Description" "RES 11K OHM 1% 1/8W 0805"
-			(at 199.39 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "MPN" "RC0805FR-0711KL"
-			(at 199.39 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 199.39 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "baf9e387-1c61-4b6a-9dc8-87be8157129d")
-		)
-		(pin "2"
-			(uuid "e26be8e2-3b4e-4028-8ad8-5bebcf112803")
-		)
-		(instances
-			(project "air-quality-pcb-v7"
-				(path "/a1b2c3d4-0004-4000-8000-000000000004"
-					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -18102,7 +16700,7 @@
 			(uuid "9f329038-70fa-465b-8c71-553ea39860c2")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C10")
 					(unit 1)
@@ -18208,7 +16806,7 @@
 			(uuid "b3c5e938-5aeb-4105-82cd-1487f9c82d28")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q6")
 					(unit 1)
@@ -18309,7 +16907,7 @@
 			(uuid "f7169adf-7bae-454d-b17f-216c99878662")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "D2")
 					(unit 1)
@@ -18419,7 +17017,7 @@
 			(uuid "a54ae5b0-c874-4da2-96e2-b090ed7b1517")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "U3")
 					(unit 1)
@@ -18496,7 +17094,7 @@
 			(uuid "156ef0b5-b050-4bde-b7c9-014e335d18c9")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "#FLG06")
 					(unit 1)
@@ -18597,7 +17195,7 @@
 			(uuid "0139f7d3-a905-4838-8392-21f3c16c892f")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R30")
 					(unit 1)
@@ -18698,7 +17296,7 @@
 			(uuid "4591c21d-d425-4037-90f1-ebb50848ce73")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R27")
 					(unit 1)
@@ -18802,7 +17400,7 @@
 			(uuid "9754fa2f-65d6-48cc-9e0c-efd270fcad93")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "SW3")
 					(unit 1)
@@ -18903,7 +17501,7 @@
 			(uuid "e7fff37a-c078-4b13-b4ba-e19964e38e76")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C1")
 					(unit 1)
@@ -19004,7 +17602,7 @@
 			(uuid "bec27d24-fb11-450c-a031-36d75fc746a4")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C2")
 					(unit 1)
@@ -19081,7 +17679,7 @@
 			(uuid "faa6e88f-09b2-4e01-a347-6bf3a51d6b40")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "#FLG01")
 					(unit 1)
@@ -19182,7 +17780,7 @@
 			(uuid "be85da3f-f91f-47dc-b2e9-22579d856d4d")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C15")
 					(unit 1)
@@ -19283,7 +17881,7 @@
 			(uuid "f9786303-7a6e-4071-956e-0ab6d18ca892")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R28")
 					(unit 1)
@@ -19384,7 +17982,7 @@
 			(uuid "1deb8632-f09d-4ce4-b391-101d3f90efc1")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R16")
 					(unit 1)
@@ -19490,7 +18088,7 @@
 			(uuid "0905deab-c4b2-4128-bdfc-493feb6854b3")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "Q8")
 					(unit 1)
@@ -19591,7 +18189,7 @@
 			(uuid "ea5197a3-2b34-4665-8f41-7200a6a4b140")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C9")
 					(unit 1)
@@ -19692,7 +18290,7 @@
 			(uuid "e5af3114-e867-4b50-a237-72374dcde6db")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C7")
 					(unit 1)
@@ -19793,7 +18391,7 @@
 			(uuid "6f5761a5-6cbc-4763-9590-75c402ad56a7")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R32")
 					(unit 1)
@@ -19894,7 +18492,7 @@
 			(uuid "72da3a09-a77a-491e-838b-f9ca6ded9f1e")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C3")
 					(unit 1)
@@ -19995,7 +18593,7 @@
 			(uuid "e123c80b-eb56-4ef2-b2b2-456f234c70d6")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "C17")
 					(unit 1)
@@ -20096,13 +18694,142 @@
 			(uuid "d567395a-65cf-4864-b3fe-7f59c464ef2a")
 		)
 		(instances
-			(project "air-quality-pcb-v7"
+			(project "air-quality-pcb-v9"
 				(path "/a1b2c3d4-0004-4000-8000-000000000004"
 					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 372.11 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "19f87d0c-3d04-457b-adff-297d4bacb324")
+		(property "Reference" "C24"
+			(at 374.65 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 374.65 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 372.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 372.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 50V X7R 0805"
+			(at 372.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "MPN" "CL21B104KBCNNNC"
+			(at 372.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 372.11 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0edf5606-d64a-45d0-87a3-4876caddb4b3")
+		)
+		(pin "2"
+			(uuid "98ac960e-213f-473b-80bf-742352ecf28b")
+		)
+		(instances
+			(project "air-quality-pcb-v9"
+				(path "/a1b2c3d4-0004-4000-8000-000000000004"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 367.03 205.74) (xy 372.11 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a47c89e-de0c-4fae-8cc6-28a7daf3d5ed")
+	)
+	(junction
+		(at 367.03 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5c701c0-afd8-4721-90d4-f0111e53a6ad")
+	)
+	(label "GND"
+		(at 372.11 213.36 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a448123e-c1b2-4da8-95b3-23da8a4acb48")
 	)
 	(sheet_instances
 		(path "/"

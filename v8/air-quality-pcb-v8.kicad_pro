@@ -72,7 +72,7 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "silk_edge_clearance|45900000|26300000|d4c8a5fa-2a78-4317-a4e8-702e91c9c39d|13d59c55-e3d3-4672-ad90-2e54e2aff430",
+          "silk_edge_clearance|46000000|26300000|d4c8a5fa-2a78-4317-a4e8-702e91c9c39d|a157bf15-e4be-49d9-b02d-2fa1a4f30ff1",
           ""
         ],
         [
@@ -84,7 +84,7 @@
           ""
         ],
         [
-          "silk_edge_clearance|64110000|26300000|d4c8a5fa-2a78-4317-a4e8-702e91c9c39d|eab3a43d-52c1-4bd2-8a19-a6d1075973df",
+          "silk_edge_clearance|64000000|26300000|d4c8a5fa-2a78-4317-a4e8-702e91c9c39d|a37d9a70-bf7d-466c-8e00-593b904f3ccc",
           ""
         ]
       ],
@@ -169,7 +169,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
@@ -257,7 +257,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "G"
+      "sch_revision": "H"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -505,7 +505,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "air-quality-pcb-v7.kicad_pro",
+    "filename": "air-quality-pcb-v8.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -611,11 +611,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/BOOST_SW"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/SERVO_5V"
+        "pattern": "/SERVO_PWR"
       },
       {
         "netclass": "Supply",
@@ -791,8 +787,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "air-quality-pcb-v7.kicad_sch",
-        "name": "air-quality-pcb-v7",
+        "filename": "air-quality-pcb-v8.kicad_sch",
+        "name": "air-quality-pcb-v8",
         "uuid": "a1b2c3d4-0004-4000-8000-000000000004"
       }
     ],
@@ -802,7 +798,7 @@
   "sheets": [
     [
       "a1b2c3d4-0004-4000-8000-000000000004",
-      "air-quality-pcb-v7"
+      "air-quality-pcb-v8"
     ]
   ],
   "text_variables": {},

@@ -35,8 +35,8 @@ Item #,*Designator,*Qty,Manufacturer,*Mfg Part #,Description / Value,*Package/Fo
 34,R32,1,YAGEO,RC0805FR-0718KL,RES 18K OHM 1% 1/8W 0805,0805,SMD,
 35,"SW1, SW2",2,C&K,KMR221G LFS,SWITCH TACTILE SPST-NO 0.05A 32V SMD,KMR2 (4.2x2.8mm),SMD,
 36,SW3,1,C&K,OS102011MA1QN1,"SWITCH SLIDE SPDT 0.1A 12V THT right-angle, 4 mm actuator",C&K OS right-angle SPDT (THT),THT,"Right-angle THT, 4 mm actuator; e.g. LCSC C226259"
-37,SW4,1,C&K,OS103011MA7QP1,"SWITCH SLIDE SP3T ON-ON-ON 0.1A 12V THT right-angle, 4 mm actuator",C&K OS right-angle SP3T (THT),THT,"Right-angle THT SP3T, 4 mm actuator; Digi-Key CKN9561-ND; custom footprint - verify"
-38,U1,1,Espressif Systems,ESP32-C3-WROOM-02-N4,"ESP32-C3 WiFi/BLE module, 4 MB flash, PCB antenna, 18x20 mm castellated",ESP32-C3-WROOM-02 module 18x20mm,SMD,"ESP32-C3 module, 4 MB flash; EPAD thermal vias 0.3 mm"
+37,SW4,1,C&K,OS103011MA7QP1,"SWITCH SLIDE SP3T ON-ON-ON 0.1A 12V THT right-angle, 4 mm actuator",C&K OS right-angle SP3T (THT),THT,"Right-angle THT SP3T, 4 mm actuator; Digi-Key CKN9561-ND"
+38,U1,1,Espressif Systems,ESP32-C3-WROOM-02-N4,"ESP32-C3 WiFi/BLE module, 4 MB flash, PCB antenna, 18x20 mm castellated",ESP32-C3-WROOM-02 module 18x20mm,SMD,"ESP32-C3 module, 4 MB flash; EPAD thermal vias 0.2 mm"
 39,U3,1,Microchip Technology,MCP73831T-2ACI/OT,IC BATT CNTL LI-ION 1CEL SOT-23-5,SOT-23-5,SMD,
 40,U4,1,Diodes Incorporated,AP2112K-3.3TRG1,IC REG LINEAR 3.3V 600MA SOT-23-5,SOT-23-5,SMD,
 41,U5,1,Bosch Sensortec,BME688,SENSOR GAS/HUM/PRES/TEMP I2C LGA-8,LGA-8 3x3,SMD,

@@ -115,9 +115,16 @@ every placed component (verified against Digi-Key). To regenerate the assembly B
   `.kicad_sch` is left at **0 bytes**. Keep batches to 2–3 components and copy the file before each call.
 - **Text with line breaks:** `add_schematic_text` stores `\n` as a literal
   backslash-n; fix it in the file (`\\n` → `\n`).
-- **Project footprints** live in `<version>/AirQuality.pretty` (registered in the
-  version's `fp-lib-table`). For v7, update `densifyRefs` in step 6 to the module/regulators
-  that exist (`U1`, `U4`, `U7`).
+- **Vendor footprints** (parts with no stock KiCad footprint) come from the Mouser / SamacSys
+  Library Loader ZIP (`~/Downloads/LIB_<MPN>.zip`, `KiCad/` + `3D/` folders) and live in
+  `<version>/SamacSys_Parts.pretty` (registered in the version's `fp-lib-table`), with the STEP in
+  `<version>/<project>.3dshapes/`. A manufacturer's own KiCad library is also fine: v8 takes the
+  ESP32-C3-WROOM-02 from [espressif/kicad-libraries](https://github.com/espressif/kicad-libraries)
+  into `v8/Espressif.pretty`. Do not draw custom footprints. For v7, update `densifyRefs` in step 6 to the module/regulators
+  that exist (`U1`, `U4`, `U7`); v8 has no U7 (`U1`, `U4`).
+- **Minimum drill is 0.3 mm** (PCBWay standard). v8's WROOM-02 EPAD vias are free board vias
+  (0.6/0.3 mm, see `v8/layout_plan.md`), not footprint pads: step 1 (`delete_trace` with `includeVias`)
+  removes them, so re-add them after re-routing.
 - **BOM without the MCP:** `kicad-cli sch export bom --fields
   "Reference,Value,Footprint,Manufacturer,MPN,Description" --group-by ""` produces
   the same `bom_kicad_raw.csv` that `build_pcbway_bom.py` expects.
