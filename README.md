@@ -1,155 +1,91 @@
 # Air Quality Checker — PCB
 
-> **Eight board revisions are in this repo.** The latest, [`v8/`](v8/), is the routed v7
-> board **without the 5 V servo boost** (the servo runs from VSYS through its load switch) and
-> with Espressif's WROOM-02 footprint, so the board keeps the **0.3 mm minimum drill** — see
-> [`v8/README.md`](v8/README.md) and [`v8/design_review.md`](v8/design_review.md) (F25–F26).
-> [`v7/`](v7/) moved to the **ESP32-C3** (native USB, no CP2102N) and added a servo-rail load switch,
-> a FET-driven power switch and long-actuator edge switches — see [`v7/README.md`](v7/README.md).
->
-> **Older revisions:** This README documents **v1**
-> (108 × 108 mm square). A denser **round** revision lives in [`v2/`](v2/) —
-> Ø 72 mm, with mounting holes and a wind logo, same circuit. [`v3/`](v3/) is
-> the round board with the **BME688 soldered directly on-board** (no STEMMA QT
-> breakout). [`v4/`](v4/) adds a GPIO2 status LED, battery sensing, USB ESD,
-> battery reverse-polarity protection, a spare-GPIO header, fiducials and a 5 V
-> servo boost. [`v5/`](v5/) is the production/assembly refresh (PCBWay BOM,
-> replacement power switch) — see [`v5/power_budget.md`](v5/power_budget.md)
-> for the battery-life analysis. [`v6/`](v6/) applies that analysis: gated
-> servo boost, 3-position **WiFi mode switch** (OFF/SPARSE/CONTINUOUS),
-> side-view status LED, MΩ battery sensing — see [`v6/README.md`](v6/README.md).
+Custom 2-layer KiCad boards for the [air-quality-checker](../air-quality-checker) firmware: a battery-powered
+indoor air-quality monitor. A Bosch **BME688** measures the air, an **SG92R** micro servo points at the current IAQ
+band, and readings can be uploaded over WiFi. A LiPo cell powers it and charges over USB-C. The device sleeps
+~98 % of the time and wakes every 5 minutes.
 
-Custom 2-layer KiCad board for the [air-quality-checker](../air-quality-checker) firmware:
-an ESP8266 air-quality monitor that reads a Bosch BME688 over I2C and moves an
-SG92R micro servo to indicate the current IAQ level. Battery-powered with LiPo
-charging over USB-C.
-
-This board replaces the Adafruit Feather HUZZAH with an on-board design, so the
-whole system fits on one PCB.
+The repo holds every board revision in its own folder. **The current board is [`v9/`](v9/) (rev I).**
 
 ---
 
-## What's on the board
+## Current board — v9 (rev I)
 
 | Block | Part | Notes |
 |---|---|---|
-| MCU | **ESP-12F** (ESP8266, 4 MB) | Castellated module, antenna keep-out respected |
-| USB–serial | **CP2102N** QFN28 | USB-C → UART, with DTR/RTS auto-reset |
-| Charger | **MCP73831** | Single-cell LiPo, 2.2 kΩ PROG ≈ 500 mA |
-| Regulator | **AP2112K-3.3** | 3.3 V LDO @ 600 mA |
-| Power path | **DMG2305UX** PFET + **B5819W** Schottky | USB powers the rail and charges the cell |
-| Sensor | **STEMMA QT (JST-SH 4P)** | BME688 breakout over I2C (SDA GPIO4 / SCL GPIO5) |
-| Actuator | **3-pin servo header** | SG92R, powered from VBAT through a 100 Ω signal resistor |
-| User I/O | RESET + BOOT buttons, deep-sleep jumper, PWR and CHG LEDs | |
-| Battery | **JST-PH 2P** | LiPo cell |
+| MCU | **ESP32-C3-WROOM-02-N4** | native USB Serial/JTAG (no USB-UART bridge), antenna in a board notch with no copper beside it |
+| Sensor | **BME688** on-board, I²C 0x76 | on a slotted island at the board edge for thermal isolation |
+| Indicator | **SG92R** servo header | from VSYS through a load switch (Q6): 0 µA in sleep, 4.5 V on USB / 3.0–4.2 V on battery |
+| Charger | **MCP73831**, ~303 mA | charge status to the MCU (IO20) and a green side-view LED |
+| Regulator | **AP2112K-3.3** | 600 mA LDO |
+| Power path | DMG2305UX P-FETs + B5819W | USB priority, battery reverse-polarity protection, POWER switch drives a FET |
+| Controls | POWER (SPDT) + **WiFi mode** (SP3T: OFF / SPARSE / CONTINUOUS) slide switches | right-angle, actuators through the enclosure wall |
+| Indicators | blue STATUS + green CHG side-view LEDs | visible from the enclosure side |
+| Expansion | **STEMMA QT / Qwiic** port | switched 3.3 V and bus isolation: 0 µA when off; e.g. for a real CO₂ sensor |
+| Protection | 2 × USBLC6-2SC6 | USB data lines and the STEMMA QT port |
+| Board | Ø 72 mm round, bottom flat for the controls, 2 layers, 1.6 mm FR4 | 0.3 mm minimum drill; assembled by PCBWay |
 
-Board size: **108 × 108 mm**, 2 copper layers, 1.6 mm FR4.
+**State (2026-10-08):** layout done, ERC 0 / DRC 0 with schematic parity; schematic PDF and PCBWay BOM generated.
+Gerbers, the ESP32-C3 firmware port and bench validation are still open.
 
----
-
-## Schematic ↔ firmware pin map
-
-| Net | ESP-12F pin | Function |
-|---|---|---|
-| `SDA` | GPIO4 | BME688 I2C data |
-| `SCL` | GPIO5 | BME688 I2C clock |
-| `SERVO_PWM` | GPIO13 | Servo PWM (through R17 100 Ω) |
-| `GPIO16` | GPIO16 | Deep-sleep wake → RST via JP1 |
-| `RST` | RST | Reset; pulled up by R2, driven by Q1 (DTR) |
-| `GPIO0` | GPIO0 | Boot strap; pulled up by R3, driven by Q2 (RTS) |
-| `UART_TX` | GPIO1/TXD | to CP2102N RXD |
-| `UART_RX` | GPIO3/RXD | to CP2102N TXD |
-| `GPIO2` | GPIO2 | On-board status LED (firmware `LED_PIN`) |
-| `GPIO15` | GPIO15 | Pulled low (boot strap) |
-
-`GPIO16 → RST` is required for `ESP.deepSleep()` to wake up (ESP8266 Errata 2.9).
-The jumper **JP1** ships **bridged**; cut it only if you need GPIO16 for something else.
-
----
-
-## Power architecture
-
-```
-USB-C (VBUS) ─┬─► MCP73831 ─► VBAT_RAW (LiPo JST-PH)
-              │                 │
-              │            SW3 (power switch)
-              │                 │
-              │                 ▼
-              └─►|B5819W├──► VSYS ◄── Q3 (DMG2305UX, USB priority)
-                            │
-                            ├─► AP2112K-3.3 ─► +3V3 (ESP + BME688)
-                            └─► Servo header V+   (C13 100 µF bulk)
-```
-
-When USB is present, Q3 turns off and the Schottky feeds VSYS, so the cell is not
-loaded during charging. On battery, Q3 conducts and the cell drives VSYS.
-
-> **Note:** the servo runs from **VBAT/VSYS** (~3.7–4.2 V), not the 3.3 V rail, per
-> the SG92R's 4.8–6 V rating. Torque is slightly reduced at 3.7 V; add a boost
-> converter if that matters.
-
----
-
-## Fabrication
-
-Gerbers and drill files are in `gerbers/` (regenerate with `kicad-cli`).
-Recommended stack-up for JLCPCB/OSHPark: 2 layers, 1.6 mm, HASL, 0.2 mm min trace.
-
-### Regenerate outputs
-
-```sh
-kicad-cli pcb export gerbers --output gerbers/ \
-  --layers "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts" \
-  air-quality-pcb.kicad_pcb
-kicad-cli pcb export drill --output gerbers/ air-quality-pcb.kicad_pcb
-kicad-cli sch export bom --output bom.csv air-quality-pcb.kicad_sch
-kicad-cli pcb drc --output drc.rpt air-quality-pcb.kicad_pcb
-kicad-cli sch erc --output erc.rpt air-quality-pcb.kicad_sch
-```
-
----
-
-## Verification status
-
-| Check | Result |
+| v9 document | For |
 |---|---|
-| ERC (schematic) | **0 errors, 0 warnings** |
-| DRC (board) | **0 violations, 0 unconnected** |
-| Nets | 32, all routed; GND is a filled pour on both layers |
-| Autorouter | Freerouting 2.4.1 (Specctra DSN/SES) |
+| [`v9/README.md`](v9/README.md) | changes vs v8, pin map, power architecture, firmware port, outputs, next steps |
+| [`v9/user-documentation.md`](v9/user-documentation.md) | people using the device |
+| [`v9/design_review.md`](v9/design_review.md) | findings F1–F34 with evidence and validation checklists |
+| [`v9/layout_constraints.md`](v9/layout_constraints.md) | layout rules |
+| [`v9/power_budget.md`](v9/power_budget.md) | sleep floor, wake budget, battery life per WiFi mode |
 
 ---
 
-## Design notes / caveats
+## Revisions
 
-- **Antenna keep-out:** U1's antenna region (top of the module) is kept clear of
-  copper by the ESP-12E footprint. Do not route or pour under it.
-- **USB-C CC resistors** R10/R11 (5.1 kΩ) are required for a USB-C source to
-  provide VBUS.
-- **CP2102N auto-program:** Q1/Q2 form the standard cross-coupled DTR/RTS reset
-  and boot circuit used by the Feather; `pio run --target upload` works without
-  touching the buttons.
-- **BME688 pull-ups** live on the Adafruit breakout (10 kΩ) — none are fitted here.
-- **Charging current** is set by R14 = 2.2 kΩ (≈ 500 mA: I = 1000 / R).
+| Rev | Folder | Summary | Docs |
+|---|---|---|---|
+| A | [`v1/`](v1/) | 108 × 108 mm square. ESP-12F (ESP8266) + CP2102N, BME688 breakout over STEMMA QT, servo from VBAT | [README](v1/README.md) |
+| B | [`v2/`](v2/) | Same circuit on a **Ø 72 mm round** board, mounting holes, wind logo | [README](v2/README.md) |
+| C | [`v3/`](v3/) | **BME688 soldered on-board**, copper keep-out under the sensor | [README](v3/README.md) |
+| D | [`v4/`](v4/) | GPIO2 status LED, battery sensing, USB ESD, battery reverse-polarity FET, spare-GPIO header, fiducials, **5 V servo boost** | [README](v4/README.md) |
+| E | [`v5/`](v5/) | Production / assembly refresh (PCBWay BOM, replacement power switch); battery-life analysis | [power budget](v5/power_budget.md) |
+| F | [`v6/`](v6/) | Gated servo boost, **3-position WiFi mode switch**, side-view status LED, MΩ battery divider | [README](v6/README.md), [user docs](v6/user-documentation.md), [power budget](v6/power_budget.md) |
+| G | [`v7/`](v7/) | **ESP32-C3** (native USB, no CP2102N), FET-driven power switch, servo-rail load switch, long-actuator edge switches, STEMMA QT port, charge-status input, antenna notch and sensor island | [README](v7/README.md), [design review](v7/design_review.md) |
+| H | [`v8/`](v8/) | **Servo boost removed** (servo from VSYS), Espressif WROOM-02 footprint so the board keeps the 0.3 mm minimum drill. Fabrication outputs were generated | [README](v8/README.md), [design review](v8/design_review.md) |
+| I | [`v9/`](v9/) | Re-placed and re-routed v8: **GPIO remap**, LDO at the module, smaller sensor island, no copper beside the antenna, C24 on the STEMMA QT rail | [README](v9/README.md) and the documents above |
+
+Each revision's README lists what changed against the one before. From v7 on, the design reviews number their
+findings (F1, F2, …) and carry them forward, so a finding keeps its number across revisions.
+
+---
+
+## Repository layout
+
+```
+README.md                   this overview
+build_pcbway_bom.py         KiCad BOM export → PCBWay BOM (python build_pcbway_bom.py v9)
+a-sample-of-PCBWay-BOM.xlsx PCBWay's BOM template, the format the script produces
+wind.svg                    wind logo used on the back silkscreen (v2+)
+vN/
+  air-quality-pcb-vN.kicad_pro / .kicad_sch / .kicad_pcb
+  README.md, design_review.md, layout_constraints.md, power_budget.md, user-documentation.md   (as available)
+  bom_kicad_raw.csv → bom_pcbway_vN.csv, schematic_vN.pdf                                       (as generated)
+  Espressif.pretty/, SamacSys_Parts.pretty/, fp-lib-table, air-quality-pcb-vN.3dshapes/       (v7+: vendor footprints and STEP models)
+```
+
+Not in git (see `.gitignore`): `gerbers/`, `*.rpt` (ERC/DRC reports), KiCad backups and lock files. Regenerate
+them with the `kicad-cli` commands in each revision's README (KiCad 10).
+
+### PCBWay BOM
+
+1. Export the schematic BOM ungrouped, with the fields `Reference,Value,Footprint,Manufacturer,MPN,Description`, to
+   `vN/bom_kicad_raw.csv` (command in the revision README).
+2. `python build_pcbway_bom.py vN` groups it into PCBWay's columns and writes `vN/bom_pcbway_vN.csv`.
 
 ---
 
 ## Firmware
 
-The firmware lives in the sibling [`air-quality-checker`](../air-quality-checker)
-repo. It is unchanged and runs as-is on this board — same ESP8266, same I2C pins,
-same servo pin (`GPIO13`), same LED pin (`GPIO2`).
-
----
-
-## Files
-
-| File | Purpose |
-|---|---|
-| `air-quality-pcb.kicad_pro` | Project |
-| `air-quality-pcb.kicad_sch` | Schematic (ERC clean) |
-| `air-quality-pcb.kicad_pcb` | Board (DRC clean, fully routed) |
-| `schematic.pdf` | Plotted schematic |
-| `render.png` / `render_bottom.png` | 3D renders |
-| `bom.csv` | Bill of materials |
-| `gerbers/` | Gerbers + drill (fabrication) |
+The firmware lives in the sibling [`air-quality-checker`](../air-quality-checker) repo. It currently targets the
+**ESP8266 boards (v1–v6)**. The ESP32-C3 boards (v7–v9) need a port: PlatformIO `espressif32`, ESP-IDF deep sleep,
+the new pin map, BME688 at 0x76. The steps are in [`v7/README.md`](v7/README.md#firmware-port-air-quality-checker-repo),
+with the servo rules from v8 and the **v9 pin map** in [`v9/README.md`](v9/README.md#firmware-port-air-quality-checker-repo).
+The v7/v8 and v9 pin maps differ, so a v8 build must not be flashed onto a v9 board.

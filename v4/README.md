@@ -6,7 +6,7 @@ protection, battery reverse-polarity protection, a spare-GPIO header, fiducials,
 and a 5 V boost for the servo.
 
 > The core (ESP-12F, CP2102N, MCP73831, AP2112K, power path, on-board BME688)
-> is unchanged from v3. See the root [README](../README.md) for the full
+> is unchanged from v3. See the [v1 README](../v1/README.md) for the full
 > electrical description and the schematic↔firmware pin map.
 
 ---

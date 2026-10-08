@@ -1,11 +1,11 @@
 # Air Quality Checker — PCB v2 (round)
 
 Second iteration of the [air-quality-checker](../air-quality-checker) board: the
-same ESP8266 + BME688 + SG92R design as [v1](../), but on a **compact round
+same ESP8266 + BME688 + SG92R design as [v1](../v1/), but on a **compact round
 PCB** with mounting holes and a wind logo.
 
 > The circuit is identical to v1 — only the mechanical form factor, placement
-> density and silkscreen changed. See the root [README](../README.md) for the
+> density and silkscreen changed. See the [v1 README](../v1/README.md) for the
 > full electrical description and the schematic↔firmware pin map.
 
 ---

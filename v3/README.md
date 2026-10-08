@@ -4,7 +4,7 @@ Third iteration: the same round board as [v2](../v2/), but the Bosch **BME688 is
 soldered directly on the PCB** instead of hanging off a STEMMA QT breakout.
 
 > The power/USB/MCU section is identical to v2; only the sensor front-end
-> changed. See the root [README](../README.md) for the full electrical
+> changed. See the [v1 README](../v1/README.md) for the full electrical
 > description and the schematic↔firmware pin map.
 
 ---
