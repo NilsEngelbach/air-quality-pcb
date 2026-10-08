@@ -12,4 +12,6 @@ fp-info-cache
 # Fabrication output (regenerated on demand)
 gerbers/
 
+*.rpt
+
 *.env

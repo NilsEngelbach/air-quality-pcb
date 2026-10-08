@@ -1,5 +1,0 @@
-(fp_lib_table
-	(version 7)
-	(lib (name "SamacSys_Parts") (type "KiCad") (uri "${KIPRJMOD}/SamacSys_Parts.pretty") (options "") (descr "Vendor footprints from Mouser / SamacSys Library Loader"))
-	(lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/Espressif.pretty") (options "") (descr "Vendor footprints from Espressif (github.com/espressif/kicad-libraries)"))
-)
